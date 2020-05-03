@@ -1,7 +1,7 @@
 {
   "name": "v-pip",
   "description": "Vue.js wrapper for picture-in-picture",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Vinayak Kulkarni",
     "email": "vinayak.kulkarni@live.com",
@@ -13,8 +13,17 @@
   "unpkg": "dist/v-pip.js",
   "jsdelivr": "dist/v-pip.js",
   "cdn": "dist/v-pip.js",
-  "files": ["dist"],
-  "keywords": ["V-pip", "pip", "Vue.js", "pip", "Component", "Vue-pip"],
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "V-pip",
+    "pip",
+    "Vue.js",
+    "pip",
+    "Component",
+    "Vue-pip"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinayakkulkarni/v-pip.git"
