@@ -1,7 +1,6 @@
 # V-Pip 🖼
 
-<center><a href="http://npmjs.org/package/v-pip"><img src="https://img.shields.io/npm/v/v-pip.svg" alt="npm version"></a> <a href="https://github.com/vinayakkulkarni/v-pip/releases/latest"><img src="http://img.badgesize.io/vinayakkulkarni/v-pip/master/dist/v-pip.min.js?compression=gzip" alt="gzip size"></a> <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=shield"/></a>
-<a href="http://npm-stat.com/charts.html?package=v-pip"><img src="https://img.shields.io/npm/dm/v-pip.svg" alt="npm downloads"></a></center>
+<center><a href="http://npmjs.org/package/v-pip"><img src="https://img.shields.io/npm/v/v-pip.svg" alt="npm version"></a> <a href="https://github.com/vinayakkulkarni/v-pip/releases"><img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/vinayakkulkarni/v-pip?include_prereleases"></a> <a href="https://bundlephobia.com/result?p=v-pip"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/v-pip"></a> <a href="http://npm-stat.com/charts.html?package=v-pip"><img src="https://img.shields.io/npm/dm/v-pip.svg" alt="npm downloads"></a> <a href="https://github.com/vinayakkulkarni/v-pip/actions?query=workflow%3A%22Ship+js+trigger%22"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/vinayakkulkarni/v-pip/Ship js trigger"></a> <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=shield"/></a> <a href="https://david-dm.org/vinayakkulkarni/v-pip?type=dev" title="devDependencies status"><img src="https://david-dm.org/vinayakkulkarni/v-pip/dev-status.svg"/></a></center>
 
 ---
 
@@ -18,9 +17,7 @@
 ## Installation
 
 ```bash
-npm install v-pip
-# or
-yarn add v-pip
+npm install v-pip # yarn add v-pip
 ```
 
 CDN: [UNPKG](https://unpkg.com/v-pip/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/v-pip/dist/) (available as `window.VPip`)
@@ -64,6 +61,7 @@ Vue.component('example-component', {
     VPip,
   },
   data: () => ({
+    isPip: false,
     videoOptions: {
       wrapper: '',
       src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
@@ -76,6 +74,17 @@ Vue.component('example-component', {
       label: 'Toggle picture-in-picture',
     },
   }),
+  methods: {
+    handlePIP(e) {
+      this.isPip = e;
+    },
+    handlePipOpenFailure(err) {
+      console.log('Video failed to enter Picture-in-Picture mode.', err);
+    },
+    handlePipExitFailure(err) {
+      console.log('Video failed to leave Picture-in-Picture mode.', err);
+    },
+  },
 });
 ```
 </details>
@@ -111,8 +120,8 @@ Vue.component('example-component', {
 
 | Name            | Type   | Required? | Description                                                 |
 | --------------  | ------ | --------- | ----------------------------------------------------------- |
-| `video-options`     | Object | Yes        | The set of options required to setup the V-Pip component. defaults: [L22-L28](src/VPip.vue#L22-L28)    |
-| `button-options` | Object | No        | The set of options for the toggle button defaults: [L29-L34](src/VPip.vue#L29-L34) |
+| `video-options`     | Object | Yes        | The set of options required to setup the V-Pip component. defaults: [L32-L42](src/VPip.vue#L32-L42)    |
+| `button-options` | Object | No        | The set of options for the toggle button defaults: [L45-L53](src/VPip.vue#L45-L53) |
 
 ### Events
 
