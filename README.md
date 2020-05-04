@@ -1,6 +1,7 @@
 # V-Pip 🖼
 
-<center><a href="http://npmjs.org/package/v-pip"><img src="https://img.shields.io/npm/v/v-pip.svg" alt="npm version"></a> <a href="https://github.com/vinayakkulkarni/v-pip/releases/latest"><img src="http://img.badgesize.io/vinayakkulkarni/v-pip/master/dist/v-pip.min.js?compression=gzip" alt="gzip size"></a> <a href="http://npm-stat.com/charts.html?package=v-pip"><img src="https://img.shields.io/npm/dm/v-pip.svg" alt="npm downloads"></a></center>
+<center><a href="http://npmjs.org/package/v-pip"><img src="https://img.shields.io/npm/v/v-pip.svg" alt="npm version"></a> <a href="https://github.com/vinayakkulkarni/v-pip/releases/latest"><img src="http://img.badgesize.io/vinayakkulkarni/v-pip/master/dist/v-pip.min.js?compression=gzip" alt="gzip size"></a> <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=shield"/></a>
+<a href="http://npm-stat.com/charts.html?package=v-pip"><img src="https://img.shields.io/npm/dm/v-pip.svg" alt="npm downloads"></a></center>
 
 ---
 
@@ -135,3 +136,7 @@ Vue.component('example-component', {
 Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-pip/contributors)).
 
 > [vinayakkulkarni.dev](https://vinayakkulkarni.dev) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_large)
