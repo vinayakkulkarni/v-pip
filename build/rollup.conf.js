@@ -1,5 +1,5 @@
-import commonjs from '@rollup/plugin-commonjs';
 import babel from 'rollup-plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 import vue from 'rollup-plugin-vue';
 
 export default [
@@ -11,7 +11,14 @@ export default [
       name: 'VPip',
       file: 'dist/v-pip.esm.js',
     },
-    plugins: [babel(), vue()],
+    plugins: [
+      babel({
+        exclude: 'node_modules/**',
+        runtimeHelpers: true,
+      }),
+      commonjs(),
+      vue(),
+    ],
     external: ['@vue/composition-api'],
   },
   // CommonJS build
@@ -22,7 +29,14 @@ export default [
       name: 'VPip',
       file: 'dist/v-pip.cjs.js',
     },
-    plugins: [babel(), commonjs(), vue()],
+    plugins: [
+      babel({
+        exclude: 'node_modules/**',
+        runtimeHelpers: true,
+      }),
+      commonjs(),
+      vue(),
+    ],
     external: ['@vue/composition-api'],
   },
   // UMD build.
@@ -31,12 +45,19 @@ export default [
     output: {
       format: 'umd',
       name: 'VPip',
-      file: 'dist/v-pip.umd.js',
+      file: 'dist/v-pip.js',
       globals: {
         '@vue/composition-api': 'vueCompositionApi',
       },
     },
-    plugins: [vue()],
+    plugins: [
+      babel({
+        exclude: 'node_modules/**',
+        runtimeHelpers: true,
+      }),
+      commonjs(),
+      vue(),
+    ],
     external: ['@vue/composition-api'],
   },
 ];
