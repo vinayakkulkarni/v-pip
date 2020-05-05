@@ -69,14 +69,11 @@
     setup(props, { emit }) {
       // State
       const video = ref(null);
-
-      // Computed props
-      const isPipSupported = computed(
-        () => 'pictureInPictureEnabled' in document,
-      );
+      const isPipSupported = ref(false);
 
       // Lifecycle Hooks
       onMounted(() => {
+        isPipSupported.value = 'pictureInPictureEnabled' in document;
         video.value.addEventListener('enterpictureinpicture', () => {
           emit('video-in-pip', true);
         });
