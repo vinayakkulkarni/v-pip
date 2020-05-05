@@ -25,7 +25,15 @@
 </template>
 
 <script>
-  export default {
+  import {
+    ref,
+    computed,
+    onMounted,
+    onBeforeUnmount,
+    defineComponent,
+  } from '@vue/composition-api';
+
+  export default defineComponent({
     name: 'VPip',
     props: {
       // Video related options
@@ -58,49 +66,51 @@
         required: false,
       },
     },
-    data: () => ({
-      isPip: false,
-    }),
-    computed: {
-      isPipSupported() {
-        return 'pictureInPictureEnabled' in document;
-      },
-    },
-    mounted() {
-      const { video } = this.$refs;
-      video.addEventListener('enterpictureinpicture', () => {
-        this.isPip = true;
-        this.$emit('video-in-pip', true);
+    setup(props, { emit }) {
+      // State
+      const video = ref(null);
+
+      // Computed props
+      const isPipSupported = computed(
+        () => 'pictureInPictureEnabled' in document,
+      );
+
+      // Lifecycle Hooks
+      onMounted(() => {
+        video.value.addEventListener('enterpictureinpicture', () => {
+          emit('video-in-pip', true);
+        });
+        video.value.addEventListener('leavepictureinpicture', () => {
+          emit('video-in-pip', false);
+        });
       });
-      video.addEventListener('leavepictureinpicture', () => {
-        this.isPip = false;
-        this.$emit('video-in-pip', false);
+      onBeforeUnmount(() => {
+        video.value.removeEventListener('enterpictureinpicture');
+        video.value.removeEventListener('leavepictureinpicture');
       });
-    },
-    beforeDestroy() {
-      const { video } = this.$refs;
-      // clear all listeners
-      video.removeEventListener('enterpictureinpicture');
-      video.removeEventListener('leavepictureinpicture');
-      this.isPip = false;
-    },
-    methods: {
-      togglePip() {
-        const { video } = this.$refs;
+
+      // Methods
+      const togglePip = () => {
         // If there is no element in Picture-in-Picture yet, let’s request
         // Picture-in-Picture for the video, otherwise leave it.
         if (!document.pictureInPictureElement) {
-          video.requestPictureInPicture().catch((error) => {
+          video.value.requestPictureInPicture().catch((error) => {
             // Video failed to enter Picture-in-Picture mode.
-            this.$emit('requesting-pip-failure', error);
+            emit('requesting-pip-failure', error);
           });
         } else {
           document.exitPictureInPicture().catch((error) => {
             // Video failed to leave Picture-in-Picture mode.
-            this.$emit('exiting-pip-failure', error);
+            emit('exiting-pip-failure', error);
           });
         }
-      },
+      };
+
+      return {
+        video,
+        isPipSupported,
+        togglePip,
+      };
     },
-  };
+  });
 </script>
