@@ -1,27 +1,29 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
-    es6: true,
-    node: true
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
+    node: true,
   },
   extends: [
-    'plugin:vue/recommended',
-    'plugin:prettier/recommended',
-    'prettier',
-    'prettier/vue'
+    'plugin:vue/essential',
+    '@vue/airbnb',
   ],
-  // required to lint *.vue files
-  plugins: [
-    'vue',
-    'prettier'
-  ],
-  // add your custom rules here
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  }
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'max-len': 'off'
+  },
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+      ],
+      env: {
+        mocha: true,
+      },
+    },
+  ],
 };
