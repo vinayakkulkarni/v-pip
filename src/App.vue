@@ -1,10 +1,12 @@
 <template>
   <div id="app" class="w-full h-full relative">
     <github-icon />
+    <div class="w-full h-full flex justify-center items-center">
     <v-pip
       :video-options="videoOptions"
       :button-options="buttonOptions"
     />
+    </div>
     <div class="absolute bottom-0 right-0 pr-2">
       <a
         href="https://www.netlify.com"
@@ -30,7 +32,7 @@ export default {
   },
   data: () => ({
     videoOptions: {
-      wrapper: '',
+      wrapper: 'rounded',
       src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       alt: 'Placeholder Image',
     },
