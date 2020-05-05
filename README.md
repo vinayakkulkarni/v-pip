@@ -120,8 +120,8 @@ Vue.component('example-component', {
 
 | Name            | Type   | Required? | Description                                                 |
 | --------------  | ------ | --------- | ----------------------------------------------------------- |
-| `video-options`     | Object | Yes        | The set of options required to setup the V-Pip component. defaults: [L32-L42](src/VPip.vue#L32-L42)    |
-| `button-options` | Object | No        | The set of options for the toggle button defaults: [L45-L53](src/VPip.vue#L45-L53) |
+| `video-options`     | Object | Yes        | The set of options required to setup the V-Pip component. defaults: [L32-L42](src/VPip.vue#L35-L42)    |
+| `button-options` | Object | No        | The set of options for the toggle button defaults: [L48-L53](src/VPip.vue#L48-L53) |
 
 ### Events
 
