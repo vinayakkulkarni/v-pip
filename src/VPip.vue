@@ -29,6 +29,7 @@
     ref,
     computed,
     onMounted,
+    onBeforeUnmount,
     defineComponent,
   } from '@vue/composition-api';
 
@@ -74,7 +75,7 @@
         () => 'pictureInPictureEnabled' in document,
       );
 
-      // Hooks
+      // Lifecycle Hooks
       onMounted(() => {
         video.value.addEventListener('enterpictureinpicture', () => {
           emit('video-in-pip', true);
@@ -82,6 +83,10 @@
         video.value.addEventListener('leavepictureinpicture', () => {
           emit('video-in-pip', false);
         });
+      });
+      onBeforeUnmount(() => {
+        video.value.removeEventListener('enterpictureinpicture');
+        video.value.removeEventListener('leavepictureinpicture');
       });
 
       // Methods
