@@ -53,8 +53,8 @@ export default {
     height: 100vh;
     width: 100vw;
     margin: 0;
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    background-color: #614848;
+    background-image: linear-gradient(315deg, #614848 0%, #3b2828 74%);
   }
   .absolute {
     position: absolute;
