@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="w-full h-full relative">
     <github-icon />
-    <div class="w-full h-full flex justify-center items-center">
+    <div class="w-full h-full text-center flex justify-center items-center">
     <v-pip
       :video-options="videoOptions"
       :button-options="buttonOptions"
@@ -32,14 +32,15 @@ export default {
   },
   data: () => ({
     videoOptions: {
-      wrapper: 'rounded',
+      wrapper: 'w-full h-full',
       src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+      class: 'w-3/4 rounded',
       alt: 'Placeholder Image',
     },
     buttonOptions: {
       wrapper: '',
       type: 'button',
-      class: '',
+      class: 'btn',
       label: 'Toggle picture-in-picture',
     },
   }),
@@ -91,6 +92,12 @@ export default {
   .h-full {
     height: 100% !important;
   }
+  .w-1\/2 {
+    width: 50%;
+  }
+  .w-3\/4 {
+    width: 75%;
+  }
   .border {
     border-width: 1px;
   }
@@ -131,7 +138,7 @@ export default {
     font-weight: 700 !important;
     margin-top: 0.75rem !important;
     color: white;
-    background-color: #4299e1 !important;
+    background-color: #307fc0 !important;
     border: 0;
     font-size: 1rem;
     border-radius: 0.25rem !important;
