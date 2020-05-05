@@ -68,7 +68,6 @@
     setup(props, { emit }) {
       // State
       const video = ref(null);
-      let isPip = false;
 
       // Computed props
       const isPipSupported = computed(
@@ -78,11 +77,9 @@
       // Hooks
       onMounted(() => {
         video.value.addEventListener('enterpictureinpicture', () => {
-          isPip = true;
           emit('video-in-pip', true);
         });
         video.value.addEventListener('leavepictureinpicture', () => {
-          isPip = false;
           emit('video-in-pip', false);
         });
       });
@@ -106,7 +103,6 @@
 
       return {
         video,
-        isPip,
         isPipSupported,
         togglePip,
       };
