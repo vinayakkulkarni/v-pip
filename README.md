@@ -1,4 +1,4 @@
-# v-img-demo
+# v-pip demo
 
 ## Project setup
 ```
