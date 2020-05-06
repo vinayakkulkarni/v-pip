@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="w-full h-full relative">
+  <div class="w-full h-full relative">
     <github-icon />
     <div class="w-full h-full text-center flex justify-center items-center">
     <v-pip
