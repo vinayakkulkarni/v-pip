@@ -8,7 +8,7 @@
 
 * This is [on GitHub](https://github.com/vinayakkulkarni/v-pip) so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
 
-* Demo here -> [💯 Codesandbox Link](http://bit.ly/v-pip)
+* Demo here -> [Netlify Demo](https://v-pip.netlify.app/)
 
 ## Requirements
 
@@ -38,7 +38,7 @@ import VPip from 'v-pip';
 
 <details>
 <summary>
-<em>Example 1 (<a href="examples/App.vue">refer App.vue</a>)</em>
+<em>Example 1 (<a href="example/App.vue">refer App.vue</a>)</em>
 </summary>
 
 ### HTML
