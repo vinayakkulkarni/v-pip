@@ -33,7 +33,7 @@ Vue.component('VPip', require('v-pip'));
 Or use locally
 
 ```javascript
-import VPip from 'v-pip';
+import { VPip } from 'v-pip';
 ```
 
 <details>
@@ -54,7 +54,7 @@ import VPip from 'v-pip';
 
 ### JS
 ```javascript
-import VPip from 'v-pip';
+import { VPip } from 'v-pip';
 
 Vue.component('example-component', {
   components: {
@@ -100,7 +100,7 @@ Vue.component('example-component', {
 ```
 ### JS
 ```javascript
-import VPip from 'v-pip';
+import { VPip } from 'v-pip';
 
 Vue.component('example-component', {
   components: {
