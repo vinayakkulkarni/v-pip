@@ -4,7 +4,7 @@
 
 ---
 
-* Vue 💚Picture-in-picture!
+* Vue 💚 Picture-in-picture!
 
 * This is [on GitHub](https://github.com/vinayakkulkarni/v-pip) so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
 
@@ -12,7 +12,8 @@
 
 ## Requirements
 
-* [Vue.js](https://vuejs.org/) 2.x
+* version 1.x can be used in [Vue](https://vuejs.org/) 2.x apps
+* version 2.x can be used in [Vue](https://v3.vuejs.org/) 3.x apps
 
 ## Installation
 
