@@ -41,5 +41,8 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
+      - name: Build the package 🕺🏻
+        run: npm run build
+
       - name: Run linter 👀
         run: npm run lint
