@@ -12,7 +12,7 @@
   "module": "dist/v-pip.esm.js",
   "unpkg": "dist/v-pip.js",
   "jsdelivr": "dist/v-pip.js",
-  "cdn": "dist/v-pip.js",
+  "cdn": "dist/v-pip.min.js",
   "sideEffects": false,
   "files": ["dist"],
   "keywords": ["V-pip", "pip", "Vue.js", "pip", "Component", "Vue-pip"],

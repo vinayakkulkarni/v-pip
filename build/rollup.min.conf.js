@@ -16,6 +16,8 @@ export default {
     file: 'dist/v-pip.min.js',
   },
   plugins: [
+    resolve({ extensions, browser: true }),
+    commonjs(),
     alias({
       entries: {
         vue: 'vue/dist/vue.runtime.esm-browser.prod.js',
@@ -25,13 +27,12 @@ export default {
       babelHelpers: 'bundled',
       exclude: 'node_modules/**',
     }),
-    commonjs(),
-    resolve({ extensions, browser: true }),
     terser(),
+    vue(),
     typescript({
       include: [/\.tsx?$/, /\.vue\?.*?lang=ts/],
       useTsconfigDeclarationDir: true,
+      clean: true,
     }),
-    vue(),
   ],
 };
