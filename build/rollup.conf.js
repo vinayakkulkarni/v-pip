@@ -1,6 +1,27 @@
-import babel from 'rollup-plugin-babel';
+import alias from '@rollup/plugin-alias';
+import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+import typescript from 'rollup-plugin-typescript2';
 import vue from 'rollup-plugin-vue';
+
+const extensions = ['.js', '.ts', '.vue'];
+
+const plugins = [
+  alias({
+    entries: {
+      vue: 'vue/dist/vue.runtime.esm-browser.prod.js',
+    },
+  }),
+  babel({ babelHelpers: 'bundled', exclude: 'node_modules/**' }),
+  commonjs(),
+  resolve({ extensions, browser: true }),
+  typescript({
+    include: [/\.tsx?$/, /\.vue\?.*?lang=ts/],
+    useTsconfigDeclarationDir: true,
+  }),
+  vue(),
+];
 
 export default [
   // ESM build to be used with webpack/rollup.
@@ -11,15 +32,7 @@ export default [
       name: 'VPip',
       file: 'dist/v-pip.esm.js',
     },
-    plugins: [
-      babel({
-        exclude: 'node_modules/**',
-        runtimeHelpers: true,
-      }),
-      commonjs(),
-      vue(),
-    ],
-    external: ['@vue/composition-api'],
+    plugins,
   },
   // CommonJS build
   {
@@ -29,15 +42,7 @@ export default [
       name: 'VPip',
       file: 'dist/v-pip.cjs.js',
     },
-    plugins: [
-      babel({
-        exclude: 'node_modules/**',
-        runtimeHelpers: true,
-      }),
-      commonjs(),
-      vue(),
-    ],
-    external: ['@vue/composition-api'],
+    plugins,
   },
   // UMD build.
   {
@@ -46,18 +51,7 @@ export default [
       format: 'umd',
       name: 'VPip',
       file: 'dist/v-pip.js',
-      globals: {
-        '@vue/composition-api': 'vueCompositionApi',
-      },
     },
-    plugins: [
-      babel({
-        exclude: 'node_modules/**',
-        runtimeHelpers: true,
-      }),
-      commonjs(),
-      vue(),
-    ],
-    external: ['@vue/composition-api'],
+    plugins,
   },
 ];

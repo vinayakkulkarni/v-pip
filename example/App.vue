@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import VPip from '../src';
+  import { VPip } from '../src';
 
   export default {
     components: {

@@ -4,7 +4,7 @@
 
 ---
 
-* Vue 💚Picture-in-picture!
+* Vue 💚 Picture-in-picture!
 
 * This is [on GitHub](https://github.com/vinayakkulkarni/v-pip) so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
 
@@ -12,7 +12,8 @@
 
 ## Requirements
 
-* [Vue.js](https://vuejs.org/) 2.x
+* version 1.x can be used in [Vue](https://vuejs.org/) 2.x apps
+* version 2.x can be used in [Vue](https://v3.vuejs.org/) 3.x apps
 
 ## Installation
 
@@ -33,7 +34,7 @@ Vue.component('VPip', require('v-pip'));
 Or use locally
 
 ```javascript
-import VPip from 'v-pip';
+import { VPip } from 'v-pip';
 ```
 
 <details>
@@ -54,7 +55,7 @@ import VPip from 'v-pip';
 
 ### JS
 ```javascript
-import VPip from 'v-pip';
+import { VPip } from 'v-pip';
 
 Vue.component('example-component', {
   components: {
@@ -100,7 +101,7 @@ Vue.component('example-component', {
 ```
 ### JS
 ```javascript
-import VPip from 'v-pip';
+import { VPip } from 'v-pip';
 
 Vue.component('example-component', {
   components: {
