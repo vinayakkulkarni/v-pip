@@ -2,25 +2,26 @@ import alias from '@rollup/plugin-alias';
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import typescript from 'rollup-plugin-typescript2';
 import vue from 'rollup-plugin-vue';
+import typescript from 'rollup-plugin-typescript2';
 
 const extensions = ['.js', '.ts', '.vue'];
 
 const plugins = [
+  resolve({ extensions, browser: true }),
+  commonjs(),
+  vue(),
   alias({
     entries: {
       vue: 'vue/dist/vue.runtime.esm-browser.prod.js',
     },
   }),
   babel({ babelHelpers: 'bundled', exclude: 'node_modules/**' }),
-  commonjs(),
-  resolve({ extensions, browser: true }),
   typescript({
     include: [/\.tsx?$/, /\.vue\?.*?lang=ts/],
     useTsconfigDeclarationDir: true,
+    clean: true,
   }),
-  vue(),
 ];
 
 export default [
@@ -28,8 +29,9 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      format: 'esm',
+      format: 'es',
       name: 'VPip',
+      exports: 'named',
       file: 'dist/v-pip.esm.js',
     },
     plugins,
