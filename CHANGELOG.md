@@ -1,3 +1,37 @@
+# [2.0.0](https://github.com/vinayakkulkarni/v-pip/compare/v1.2.1...v2.0.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* remove ava config file ([303b731](https://github.com/vinayakkulkarni/v-pip/commit/303b731b9c85ae64620b2af205f5c31006051b85))
+* update shipjs trigger ([510da1b](https://github.com/vinayakkulkarni/v-pip/commit/510da1b5050f3337492dbc9d46d65b02076d8a22))
+* update tests ([74ce6e2](https://github.com/vinayakkulkarni/v-pip/commit/74ce6e2f4538e1a216566746092bacdf6b7d76d7))
+* **deps:** bump @vue/composition-api from 1.0.0-beta.14 to 1.0.0-beta.15 ([bb3a7b7](https://github.com/vinayakkulkarni/v-pip/commit/bb3a7b702bf7934d8d7d9ae39d9880606011ef67))
+* **deps:** bump @vue/composition-api from 1.0.0-beta.15 to 1.0.0-beta.16 ([7e4a86f](https://github.com/vinayakkulkarni/v-pip/commit/7e4a86f9d0a3089bf9f8158587004438c9a2f8b2))
+* **deps:** bump @vue/composition-api from 1.0.0-beta.16 to 1.0.0-beta.17 ([db6c829](https://github.com/vinayakkulkarni/v-pip/commit/db6c82915660cf1240795c333c8972fae0f7ed46))
+* **deps:** bump actions/setup-node from v2.1.1 to v2.1.2 ([132e769](https://github.com/vinayakkulkarni/v-pip/commit/132e7696406e5ddb5bbf657e2eea96a7bb109b3f))
+* bump `shipjs` ([354e849](https://github.com/vinayakkulkarni/v-pip/commit/354e849d224bf37873acd1122eaebbbf3ee100d2))
+* bump dependencies ([47dae12](https://github.com/vinayakkulkarni/v-pip/commit/47dae12312052dc80cd1a66ce42058cdef0b3a12))
+* update `dependabot` config ([60cef31](https://github.com/vinayakkulkarni/v-pip/commit/60cef31d3fdd9c811dcda210004ed3a4f320064b))
+* update shipjs trigger ([038a80d](https://github.com/vinayakkulkarni/v-pip/commit/038a80d0c6eb43bfb0e94c2211562406b0161918))
+* **deps:** bump @vue/composition-api from 0.5.0 to 0.6.1 ([485c5a4](https://github.com/vinayakkulkarni/v-pip/commit/485c5a4900137139590402a4ccd4151ce0f786c4))
+* **deps:** bump @vue/composition-api from 0.6.1 to 0.6.2 ([403658d](https://github.com/vinayakkulkarni/v-pip/commit/403658de3e9610b9e36c2375327e96dfe17b8549))
+* **deps:** bump @vue/composition-api from 0.6.2 to 0.6.3 ([1c20f39](https://github.com/vinayakkulkarni/v-pip/commit/1c20f39b43e1292c11aed1c47e9308393d8023df))
+* **deps:** bump @vue/composition-api from 0.6.3 to 0.6.4 ([2bac0b8](https://github.com/vinayakkulkarni/v-pip/commit/2bac0b8fef3168144c4b6733ae2541565f9144f4))
+* **deps:** bump @vue/composition-api from 0.6.4 to 0.6.5 ([515dfe7](https://github.com/vinayakkulkarni/v-pip/commit/515dfe7ddea01525a9051132b7c8deca7af3475a))
+* **deps:** bump @vue/composition-api from 0.6.5 to 0.6.6 ([1d56790](https://github.com/vinayakkulkarni/v-pip/commit/1d56790c48bb2282cdd6c7929d8718645cb947ea))
+* **deps:** bump @vue/composition-api from 0.6.6 to 0.6.7 ([803ae0a](https://github.com/vinayakkulkarni/v-pip/commit/803ae0a2f674595a69239861404bd636919a6bd7))
+* **deps:** bump lodash from 4.17.15 to 4.17.19 ([aad3662](https://github.com/vinayakkulkarni/v-pip/commit/aad366249ad071c4992336c5d7171175c46ba8f1))
+* **deps:** bump node-fetch from 2.6.0 to 2.6.1 ([5215964](https://github.com/vinayakkulkarni/v-pip/commit/521596491d9f5b8c182966c57a7eb286e98ca3f6))
+* **deps:** bump serialize-javascript from 3.0.0 to 3.1.0 ([810e3c9](https://github.com/vinayakkulkarni/v-pip/commit/810e3c9b9d5e1131f9aa10270f77b44c21c63ce7))
+
+
+### Features
+
+* add tsconfig ([64d7861](https://github.com/vinayakkulkarni/v-pip/commit/64d7861afd9db575da1261ebf5f73fd7d9b72d79))
+
+
+
 <a name="1.2.1"></a>
 ## [1.2.1](https://github.com/vinayakkulkarni/v-pip/compare/v1.2.0...v1.2.1) (2020-05-05)
 
