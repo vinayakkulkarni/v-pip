@@ -1,3 +1,16 @@
+## [2.0.1](https://github.com/vinayakkulkarni/v-pip/compare/v2.0.0...v2.0.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* bump dependencies ([59b358e](https://github.com/vinayakkulkarni/v-pip/commit/59b358e5976f34391fbc2a05cd48452078a55993))
+* remove `@rollup/plugin-commonjs` ([139fc00](https://github.com/vinayakkulkarni/v-pip/commit/139fc00210c715ec2991075c108832d56d3170c2))
+* **deps:** bump actions/setup-node from v2.1.2 to v2.1.3 ([d41b4f4](https://github.com/vinayakkulkarni/v-pip/commit/d41b4f4c1be9cb4095c3f2058f6a30cd2bdd7198))
+* **deps:** bump actions/setup-node from v2.1.3 to v2.1.4 ([62d1558](https://github.com/vinayakkulkarni/v-pip/commit/62d15585ba05580f2d349441340b4492ec1aeaac))
+* **deps:** bump ini from 1.3.5 to 1.3.8 ([4b168b0](https://github.com/vinayakkulkarni/v-pip/commit/4b168b0d5268a59ddb46a50a29caeafe74b4ff7f))
+
+
+
 # [2.0.0](https://github.com/vinayakkulkarni/v-pip/compare/v1.2.1...v2.0.0) (2020-10-20)
 
 
