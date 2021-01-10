@@ -1,15 +1,13 @@
-import alias from '@rollup/plugin-alias';
-import babel from '@rollup/plugin-babel';
-import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import vue from 'rollup-plugin-vue';
+import alias from '@rollup/plugin-alias';
+import babel from '@rollup/plugin-babel';
 import typescript from 'rollup-plugin-typescript2';
 
 const extensions = ['.js', '.ts', '.vue'];
 
 const plugins = [
   resolve({ extensions, browser: true }),
-  commonjs(),
   vue(),
   alias({
     entries: {

@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
   import {
     reactive,
     computed,
@@ -69,8 +69,8 @@
     setup(props, { emit }) {
       // State
       const state = reactive({
-        video: null,
-        isPipSupported: false,
+        video: null as any,
+        isPipSupported: false as boolean,
       });
 
       // Lifecycle Hooks
@@ -92,13 +92,16 @@
       const togglePip = () => {
         // If there is no element in Picture-in-Picture yet, let’s request
         // Picture-in-Picture for the video, otherwise leave it.
-        if (!document.pictureInPictureElement) {
-          state.video.requestPictureInPicture().catch((error) => {
+        const { pictureInPictureElement, exitPictureInPicture } = document as
+          | HTMLDocument
+          | any;
+        if (!pictureInPictureElement) {
+          state.video.requestPictureInPicture().catch((error: any) => {
             // Video failed to enter Picture-in-Picture mode.
             emit('requesting-pip-failure', error);
           });
         } else {
-          document.exitPictureInPicture().catch((error) => {
+          exitPictureInPicture().catch((error: any) => {
             // Video failed to leave Picture-in-Picture mode.
             emit('exiting-pip-failure', error);
           });
