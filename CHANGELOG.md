@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.0.2...v2.1.0) (2021-01-29)
+
+
+### Features
+
+* add `commonjs()` as rollup plugin in config ([ac0fdca](https://github.com/vinayakkulkarni/v-pip/commit/ac0fdcab00bce250e396d9ece3453e3d04d1728c))
+
+
+
 ## [2.0.2](https://github.com/vinayakkulkarni/v-pip/compare/v2.0.1...v2.0.2) (2021-01-29)
 
 
