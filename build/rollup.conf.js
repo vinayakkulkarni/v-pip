@@ -1,4 +1,5 @@
 import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import vue from 'rollup-plugin-vue';
 import alias from '@rollup/plugin-alias';
 import babel from '@rollup/plugin-babel';
@@ -8,6 +9,7 @@ const extensions = ['.js', '.ts', '.vue'];
 
 const plugins = [
   resolve({ extensions, browser: true }),
+  commonjs({ extensions, exclude: 'src/**' }),
   vue(),
   alias({
     entries: {
