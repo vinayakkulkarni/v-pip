@@ -1,3 +1,27 @@
+# [2.2.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.1.0...v2.2.0) (2021-03-04)
+
+
+### Bug Fixes
+
+* **deps:** bump eslint prettier config ([c648bde](https://github.com/vinayakkulkarni/v-pip/commit/c648bdea856b9074ef5b6260019d3d7197acad18))
+* update prettier/vue issue caused by `eslint-config-prettier` ([1642b27](https://github.com/vinayakkulkarni/v-pip/commit/1642b272b74dd36edf4546690c612963001f3624))
+* **deps:** bump actions/cache from v2 to v2.1.4 ([bf16cf5](https://github.com/vinayakkulkarni/v-pip/commit/bf16cf556134709816754bf8cdbc370f50a66ba5))
+* **deps:** bump actions/setup-node from v2.1.4 to v2.1.5 ([8d39da2](https://github.com/vinayakkulkarni/v-pip/commit/8d39da2fb6381b0081646dc131d493fc47d34af0))
+
+
+### Features
+
+* **ts:** enable volar support ([b9587ef](https://github.com/vinayakkulkarni/v-pip/commit/b9587ef023ac24854fc5552cf5b2fd3b0a65f074))
+
+
+### Performance Improvements
+
+* improve npm install stage ([1962e79](https://github.com/vinayakkulkarni/v-pip/commit/1962e79e26f2c6d24de8ea26ae8fec8be185f8d0))
+* lockfile v2 🥳 ([8f2b65d](https://github.com/vinayakkulkarni/v-pip/commit/8f2b65d3191050b691221f8592494e096407bbd7))
+* support for npm 7 & node 15 ([f3f9dd7](https://github.com/vinayakkulkarni/v-pip/commit/f3f9dd73f7690a5d0c060de4110587296736b75e))
+
+
+
 # [2.1.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.0.2...v2.1.0) (2021-01-29)
 
 
