@@ -1,10 +1,9 @@
-import { Component } from 'vue';
+import { ButtonHTMLAttributes, Component } from 'vue';
 
 declare global {
   interface HTMLVideoElement {
     requestPictureInPicture(): Promise<PictureInPictureWindow>;
   }
-
   interface Document {
     readonly pictureInPictureElement: Element | null;
     exitPictureInPicture(): Promise<void>;
@@ -22,7 +21,7 @@ export type VideoOptionsProps = {
 
 export type ButtonOptionsProps = {
   wrapper: string;
-  type: string;
+  type?: ButtonHTMLAttributes['type'];
   class: string;
   label: string;
 };
