@@ -28,7 +28,6 @@
 
 - Vue 💚 Picture-in-picture!
 - Built using [TypeScript](./types/index.d.ts)
-- Demo here -> [💯 Codesandbox Link](http://bit.ly/v-pip)
 
 ### Versions
 - For Vue 3.x version – `npm i v-pip@2`
@@ -61,7 +60,7 @@
 
 ## Demo
 
-[![Edit v-pip demo](https://codesandbox.io/static/img/play-codesandbox.svg)](http://bit.ly/v-pip)
+[![Edit v-pip demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://bit.ly/v-pip)
 
 ## Requirements
 
