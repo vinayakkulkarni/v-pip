@@ -1,3 +1,26 @@
+# [2.3.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.2.0...v2.3.0) (2021-08-01)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/cache from 2.1.4 to 2.1.6 ([3d5cf6b](https://github.com/vinayakkulkarni/v-pip/commit/3d5cf6b9537680288788158ffebb470f23a8e38a))
+* **deps:** bump actions/setup-node from 2.1.5 to 2.2.0 ([37331b1](https://github.com/vinayakkulkarni/v-pip/commit/37331b1975bc7de7b3a3e34d5e237ce25fecd831))
+* emit is-pip `false` ([136ca11](https://github.com/vinayakkulkarni/v-pip/commit/136ca11da0dfa7a49e721e1eef655a4bcafb411e))
+* remove husky config ([488ae5b](https://github.com/vinayakkulkarni/v-pip/commit/488ae5b6765d3f6f6182d2776575ac5a4e3a27c0))
+* remove jsconfig cause we have `tsconfig` ([11f83af](https://github.com/vinayakkulkarni/v-pip/commit/11f83af92cf953ca4824cf7e1dce67f57c27e683))
+* types for ButtonHTML attrib ([ca68f79](https://github.com/vinayakkulkarni/v-pip/commit/ca68f79dba5b489eee98314b7927374cdb65c4df))
+* update `ship.js` config file ([c9d98e4](https://github.com/vinayakkulkarni/v-pip/commit/c9d98e49f6d3b7bbec91d560e01042be6a96411e))
+
+
+### Features
+
+* add lgtm config file ([a912a74](https://github.com/vinayakkulkarni/v-pip/commit/a912a744ddcfe934ab9d780e8ab18d8f2536ab87))
+* add types ([7348c58](https://github.com/vinayakkulkarni/v-pip/commit/7348c5850413300c18e3de7faa1f659b34336a40))
+* better TS integration ([70f04fb](https://github.com/vinayakkulkarni/v-pip/commit/70f04fb31c5c4407f799f946e2e462909568e0c2))
+* **ts:** add shims for unknown declared pkgs ([fd48e7b](https://github.com/vinayakkulkarni/v-pip/commit/fd48e7b0a8a00ce10355f1653204be1c498891a9))
+
+
+
 # [2.2.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.1.0...v2.2.0) (2021-03-04)
 
 
