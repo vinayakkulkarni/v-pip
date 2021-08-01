@@ -1,21 +1,73 @@
 # V-Pip 🖼
 
-<a href="http://npmjs.org/package/v-pip"><img src="https://img.shields.io/npm/v/v-pip.svg" alt="npm version"></a> <a href="https://github.com/vinayakkulkarni/v-pip/releases"><img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/vinayakkulkarni/v-pip?include_prereleases"></a> <a href="https://bundlephobia.com/result?p=v-pip"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/v-pip"></a> <a href="http://npm-stat.com/charts.html?package=v-pip"><img src="https://img.shields.io/npm/dm/v-pip.svg" alt="npm downloads"></a> <a href="https://github.com/vinayakkulkarni/v-pip/actions?query=workflow%3A%22Ship+js+trigger%22"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/vinayakkulkarni/v-pip/Ship js trigger"></a> <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=shield"/></a> <a href="https://david-dm.org/vinayakkulkarni/v-pip?type=dev" title="devDependencies status"><img src="https://david-dm.org/vinayakkulkarni/v-pip/dev-status.svg"/></a> <a href="https://github.com/vinayakkulkarni/janak" title="Built using Janak"><img alt="Janak Logo" src="https://img.shields.io/badge/built%20using-janak-brightgreen"/></a>
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/vinayakkulkarni/v-pip/ci?logo=github-actions)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/ci.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/vinayakkulkarni/v-pip/Ship%20js%20trigger?label=⛴%20Ship.js%20trigger)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/shipjs-trigger.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vinayakkulkarni/v-pip?sort=semver&logo=github)](https://github.com/vinayakkulkarni/v-pip/releases)
+[![npm](https://img.shields.io/npm/v/v-pip?logo=npm)](https://www.npmjs.com/package/v-pip)
+[![npm](https://img.shields.io/npm/dm/v-pip?logo=npm)](http://npm-stat.com/charts.html?package=v-pip)
+[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/v-pip/latest)](https://bundlephobia.com/package/v-pip@latest)
+[![npm type definitions](https://img.shields.io/npm/types/v-pip?logo=TypeScript)](https://github.com/vinayakkulkarni/v-pip/blob/master/package.json)
+[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/11309/branches/245168/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=11309&bid=245168)
+[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinayakkulkarni/v-pip)](https://snyk.io/test/github/vinayakkulkarni/v-pip)
+[![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/vinayakkulkarni/v-pip?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/v-pip/alerts/)
+[![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/vinayakkulkarni/v-pip?logo=lgtm)](https://lgtm.com/projects/g/vinayakkulkarni/v-pip/context:javascript)
+[![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/v-pip)](https://github.com/vinayakkulkarni/v-pip/graphs/contributors)
+[![FOSSA](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_shield)
+
+[![built using janak](https://img.shields.io/badge/built%20using-janak-brightgreen)](https://github.com/vinayakkulkarni/janak)
+[![eslint](https://img.shields.io/npm/dependency-version/v-pip/dev/eslint?logo=eslint)](https://eslint.org/)
+[![prettier](https://img.shields.io/npm/dependency-version/v-pip/dev/prettier?logo=prettier)](https://prettier.io/)
+[![rollup](https://img.shields.io/npm/dependency-version/v-pip/dev/rollup?logo=rollup.js)](https://rollupjs.org/guide/en/)
+[![vue](https://img.shields.io/npm/dependency-version/v-pip/dev/vue?logo=vue.js)](https://vuejs.org/)
+[![typescript](https://img.shields.io/npm/dependency-version/v-pip/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
 
 ---
 
-* Vue 💚 Picture-in-picture!
 
-* This is [on GitHub](https://github.com/vinayakkulkarni/v-pip) so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
+## Features
 
-* Demo here -> [💯 Codesandbox Link](http://bit.ly/v-pip)
+- Vue 💚 Picture-in-picture!
+- Built using [TypeScript](./types/index.d.ts)
+- Demo here -> [💯 Codesandbox Link](http://bit.ly/v-pip)
+
+### Versions
+- For Vue 3.x version – `npm i v-pip@2`
+- For Vue 2.x version – `npm i v-pip@1`
+
+## Table of Contents
+
+- [V-Pip 🖼](#v-pip-)
+  - [Features](#features)
+    - [Versions](#versions)
+  - [Table of Contents](#table-of-contents)
+  - [Demo](#demo)
+  - [Requirements](#requirements)
+    - [Installation](#installation)
+    - [Build Setup](#build-setup)
+  - [Usage](#usage)
+    - [Globally](#globally)
+      - [As a component](#as-a-component)
+      - [As a plugin](#as-a-plugin)
+    - [Locally](#locally)
+    - [HTML](#html)
+    - [JS](#js)
+    - [HTML](#html-1)
+    - [JS](#js-1)
+    - [Props](#props)
+    - [Events](#events)
+  - [Contributing](#contributing)
+  - [Author](#author)
+  - [License](#license)
+
+## Demo
+
+[![Edit v-pip demo](https://codesandbox.io/static/img/play-codesandbox.svg)](http://bit.ly/v-pip)
 
 ## Requirements
 
-* version 1.x can be used in [Vue](https://vuejs.org/) 2.x apps
-* version 2.x can be used in [Vue](https://v3.vuejs.org/) 3.x apps
+* [vue](https://vuejs.org/) `^3.x`
 
-## Installation
+### Installation
 
 ```bash
 npm install v-pip # yarn add v-pip
@@ -23,15 +75,35 @@ npm install v-pip # yarn add v-pip
 
 CDN: [UNPKG](https://unpkg.com/v-pip/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/v-pip/dist/) (available as `window.VPip`)
 
+### Build Setup
+
+``` bash
+# install dependencies
+$ npm ci
+
+# package the library
+$ npm run build
+```
 ## Usage
 
-Register the component globally:
+### Globally
 
+#### As a component
 ```javascript
-Vue.component('VPip', require('v-pip'));
+import { VPip } from 'v-pip';
+Vue.component('VPip', VPip);
 ```
 
-Or use locally
+#### As a plugin
+
+```javascript
+import Vue from 'vue';
+import VPip from 'v-pip';
+
+Vue.use(VPip);
+```
+
+### Locally
 
 ```javascript
 import { VPip } from 'v-pip';
@@ -121,8 +193,8 @@ Vue.component('example-component', {
 
 | Name            | Type   | Required? | Description                                                 |
 | --------------  | ------ | --------- | ----------------------------------------------------------- |
-| `video-options`     | Object | Yes        | The set of options required to setup the V-Pip component. defaults: [L32-L42](src/VPip.vue#L35-L42)    |
-| `button-options` | Object | No        | The set of options for the toggle button defaults: [L48-L53](src/VPip.vue#L48-L53) |
+| `video-options`     | Object | Yes        | The set of options required to setup the V-Pip component.    |
+| `button-options` | Object | No        | The set of options for the toggle button |
 
 ### Events
 
@@ -132,17 +204,22 @@ Vue.component('example-component', {
 | `requesting-pip-failure` | Emits an `Object` when the video fails to enter Picture-in-Picture mode. |
 | `exiting-pip-failure` | Emits an `Object` when the video fails to leave Picture-in-Picture mode. |
 
-## Contributing
+## Contributing 
 
-1.  Fork it!
-2.  Create your feature branch: `git checkout -b my-new-feature`
-3.  Commit your changes: `git commit -am 'Add some feature'`
-4.  Push to the branch: `git push origin my-new-feature`
-5.  Submit a pull request :D
+1. Fork it ( [https://github.com/vinayakkulkarni/v-pip/fork](https://github.com/vinayakkulkarni/v-pip/fork) )
+2. Create your feature branch (`git checkout -b feat/new-feature`)
+3. Commit your changes (`git commit -Sam 'feat: add feature'`)
+4. Push to the branch (`git push origin feat/new-feature`)
+5. Create a new [Pull Request](https://github.com/vinayakkulkarni/v-pip/compare)
+
+_Note_: 
+1. Please contribute using [Github Flow](https://guides.github.com/introduction/flow/)
+2. Commits & PRs will be allowed only if the commit messages & PR titles follow the [conventional commit standard](https://www.conventionalcommits.org/), _read more about it [here](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum)_
+3. PS. Ensure your commits are signed. _[Read why](https://withblue.ink/2020/05/17/how-and-why-to-sign-git-commits.html)_
 
 ## Author
 
-**v-pip** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
+**v-pip** &copy; [Vinayak](https://vinayakkulkarni.dev), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-pip/contributors)).
 
 > [vinayakkulkarni.dev](https://vinayakkulkarni.dev) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
