@@ -82,8 +82,8 @@
         state.video?.addEventListener('leavepictureinpicture', leftPip);
       });
       onBeforeUnmount(() => {
-        state.video?.removeEventListener('enterpictureinpicture', () => {});
-        state.video?.removeEventListener('leavepictureinpicture', () => {});
+        state.video?.removeEventListener('enterpictureinpicture', leftPip);
+        state.video?.removeEventListener('leavepictureinpicture', leftPip);
       });
       /**
        * Emit an event when entered PiP mode
