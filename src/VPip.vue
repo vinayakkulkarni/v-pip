@@ -27,18 +27,19 @@
 <script lang="ts">
   import {
     reactive,
-    computed,
     onMounted,
     onBeforeUnmount,
     defineComponent,
+    PropType,
   } from 'vue';
+  import { VideoOptionsProps, ButtonOptionsProps, State } from '../types';
 
   export default defineComponent({
     name: 'VPip',
     props: {
       // Video related options
       videoOptions: {
-        type: Object,
+        type: Object as PropType<VideoOptionsProps>,
         required: false,
         default: () => ({
           wrapper: '',
@@ -51,7 +52,7 @@
       },
       // button related options
       buttonOptions: {
-        type: Object,
+        type: Object as PropType<ButtonOptionsProps>,
         required: false,
         default: () => ({
           wrapper: '',
@@ -61,41 +62,52 @@
         }),
       },
       wrapper: {
-        type: String,
+        type: String as PropType<string>,
         default: '',
         required: false,
       },
     },
-    setup(props, { emit }) {
+    emits: ['video-in-pip', 'requesting-pip-failure', 'exiting-pip-failure'],
+    setup(_, { emit }) {
       // State
-      const state = reactive({
-        video: null as any,
-        isPipSupported: false as boolean,
+      const state: State = reactive({
+        video: null,
+        isPipSupported: false,
       });
 
       // Lifecycle Hooks
       onMounted(() => {
         state.isPipSupported = 'pictureInPictureEnabled' in document;
-        state.video.addEventListener('enterpictureinpicture', () => {
-          emit('video-in-pip', true);
-        });
-        state.video.addEventListener('leavepictureinpicture', () => {
-          emit('video-in-pip', false);
-        });
+        state.video?.addEventListener('enterpictureinpicture', enteredPip);
+        state.video?.addEventListener('leavepictureinpicture', leftPip);
       });
       onBeforeUnmount(() => {
-        state.video.removeEventListener('enterpictureinpicture');
-        state.video.removeEventListener('leavepictureinpicture');
+        state.video?.removeEventListener('enterpictureinpicture', () => {});
+        state.video?.removeEventListener('leavepictureinpicture', () => {});
       });
-
+      /**
+       * Emit an event when entered PiP mode
+       *
+       * @returns {void}
+       */
+      function enteredPip(): void {
+        emit('video-in-pip', true);
+      }
+      /**
+       * Emit an event when left PiP mode
+       *
+       * @returns {void}
+       */
+      function leftPip(): void {
+        emit('video-in-pip', false);
+      }
       // Methods
       const togglePip = () => {
         // If there is no element in Picture-in-Picture yet, let’s request
         // Picture-in-Picture for the video, otherwise leave it.
-        const { pictureInPictureElement, exitPictureInPicture } = document as
-          | HTMLDocument
-          | any;
-        if (!pictureInPictureElement) {
+        const { pictureInPictureElement, exitPictureInPicture } =
+          document as Document;
+        if (!pictureInPictureElement && state.video) {
           state.video.requestPictureInPicture().catch((error: any) => {
             // Video failed to enter Picture-in-Picture mode.
             emit('requesting-pip-failure', error);
