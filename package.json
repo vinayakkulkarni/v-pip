@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "echo 'Add Tests'",
-    "build": "rimraf dist && npm run bundle && npm run bundle:min",
+    "build": "npm run bundle && npm run bundle:min",
     "bundle": "rollup -c build/rollup.config.ts",
     "bundle:min": "rollup -c build/rollup.config.min.ts",
     "lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:css",
