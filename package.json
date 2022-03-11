@@ -1,7 +1,7 @@
 {
   "name": "v-pip",
   "description": "Vue.js wrapper for picture-in-picture",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "author": {
     "name": "Vinayak Kulkarni",
     "email": "vinayak.kulkarni@live.com",
