@@ -1,3 +1,19 @@
+## [2.3.1](https://github.com/vinayakkulkarni/v-pip/compare/v2.3.0...v2.3.1) (2022-03-11)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/cache from 2.1.6 to 2.1.7 ([7be7063](https://github.com/vinayakkulkarni/v-pip/commit/7be70632755846d603787987025e83b9832f0246))
+* **deps:** bump actions/setup-node from 2.2.0 to 2.3.0 ([a77843b](https://github.com/vinayakkulkarni/v-pip/commit/a77843b8e87d57bf444d05dbe31017446a80dcc4))
+* **deps:** bump actions/setup-node from 2.3.0 to 2.4.0 ([1fc6886](https://github.com/vinayakkulkarni/v-pip/commit/1fc6886bb1f44aecb45df19b08e6f06d24970c3a))
+* **deps:** bump actions/setup-node from 2.4.0 to 2.4.1 ([85a3df2](https://github.com/vinayakkulkarni/v-pip/commit/85a3df21fab76ec7620effcd150431c5fcba6b1b))
+* **deps:** bump actions/setup-node from 2.4.1 to 2.5.1 ([c4fecdb](https://github.com/vinayakkulkarni/v-pip/commit/c4fecdb698be356af2418c833858f3de7000ddf7))
+* **deps:** bump actions/setup-node from 2.5.1 to 3 ([2670da4](https://github.com/vinayakkulkarni/v-pip/commit/2670da499ef1e893f5b2dd6c4a935f51ec37e5d3))
+* **deps:** bump follow-redirects from 1.14.1 to 1.14.8 ([d92e59d](https://github.com/vinayakkulkarni/v-pip/commit/d92e59d62a33b1e488c834a9e28e9065b906493a))
+* remove `rimraf` cause pkg not found ([2a33ada](https://github.com/vinayakkulkarni/v-pip/commit/2a33ada7e497adcf2feed0c5ecc6ad9cb21aa35a))
+
+
+
 # [2.3.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.2.0...v2.3.0) (2021-08-01)
 
 
