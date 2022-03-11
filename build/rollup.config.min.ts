@@ -28,9 +28,10 @@ const plugins = [
     exclude: 'src/**',
     include: 'node_modules/**',
   }),
-  vue({ css: false }),
+  vue(),
   scss({
     output: 'dist/v-pip.min.css',
+    // @ts-ignore
     outputStyle: 'compressed',
   }),
   sucrase({

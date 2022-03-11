@@ -20,9 +20,6 @@ jobs:
         with:
           registry-url: "https://registry.npmjs.org"
 
-      - name: Install dependencies 🛠
-        run: npm ci
-
       - name: Trigger new release 🎉
         run: npx shipjs trigger
         env:
