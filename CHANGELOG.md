@@ -1,3 +1,23 @@
+# [3.0.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.3.1...v3.0.0) (2022-11-07)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 2 to 3 ([d2ae5ba](https://github.com/vinayakkulkarni/v-pip/commit/d2ae5ba5378f5a81353d4cb7ade1ac6480e22efb))
+* **deps:** bump ejs from 3.1.6 to 3.1.7 ([4273f12](https://github.com/vinayakkulkarni/v-pip/commit/4273f12254dc6eb143cfdfa08e28507e72cea6ba))
+* **deps:** bump minimist from 1.2.5 to 1.2.6 ([ec42c4e](https://github.com/vinayakkulkarni/v-pip/commit/ec42c4e80c0a4083bb5d534edce8ea960033352d))
+* **deps:** bump terser from 5.12.0 to 5.14.2 ([e11bd0a](https://github.com/vinayakkulkarni/v-pip/commit/e11bd0a892ed8b27787aa42bc1cd756be8dafe75))
+* **deps:** bump wearerequired/lint-action from 1 to 2 ([a374620](https://github.com/vinayakkulkarni/v-pip/commit/a3746200fdbecdd0a2afd905ebaf3f9bfda798a3))
+* remove lgtm config file ([8dc25dd](https://github.com/vinayakkulkarni/v-pip/commit/8dc25ddbe4f47de9bb7ea98970e16ee88ae67d77))
+* remove unused index.d.ts ([dc7b7f5](https://github.com/vinayakkulkarni/v-pip/commit/dc7b7f511bac83bbb9faae8c1f68c0915b4e5dd7))
+
+
+### Features
+
+* add vite config 🎉 ([7c3f765](https://github.com/vinayakkulkarni/v-pip/commit/7c3f7656d090c92e5df750e1ed734918b70ba0e2))
+
+
+
 ## [2.3.1](https://github.com/vinayakkulkarni/v-pip/compare/v2.3.0...v2.3.1) (2022-03-11)
 
 
