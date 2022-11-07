@@ -1,14 +1,15 @@
-import { App } from 'vue';
-import VPip from './VPip.vue';
+import { App as Application, Plugin } from 'vue';
+import VPip from './components/VPip.vue';
+import { setVueInstance } from './utils/config/index';
 
 let installed = false;
 
-const install = {
-  install(app: App): void {
-    if (installed) return;
+const install: Exclude<Plugin['install'], undefined> = (app: Application) => {
+  if (!installed) {
+    setVueInstance(app);
     app.component('VPip', VPip);
     installed = true;
-  },
+  }
 };
 
 export default install;

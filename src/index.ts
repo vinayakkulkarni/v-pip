@@ -1,2 +1,3 @@
+import VPip from './components/VPip.vue';
 export { default } from './install';
-export { default as VPip } from './VPip.vue';
+export { VPip };

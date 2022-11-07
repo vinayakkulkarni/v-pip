@@ -32,7 +32,38 @@
     defineComponent,
     PropType,
   } from 'vue';
-  import { VideoOptionsProps, ButtonOptionsProps, State } from '../types';
+  import type { ButtonHTMLAttributes } from 'vue';
+
+  declare global {
+    interface HTMLVideoElement {
+      requestPictureInPicture(): Promise<PictureInPictureWindow>;
+    }
+    interface Document {
+      readonly pictureInPictureElement: Element | null;
+      exitPictureInPicture(): Promise<void>;
+    }
+  }
+
+  type VideoOptionsProps = {
+    wrapper: string;
+    src: string;
+    poster: string;
+    class: string;
+    height: string;
+    width: string;
+  };
+
+  type ButtonOptionsProps = {
+    wrapper: string;
+    type?: ButtonHTMLAttributes['type'];
+    class: string;
+    label: string;
+  };
+
+  type State = {
+    isPipSupported: boolean;
+    video: null | HTMLVideoElement;
+  };
 
   export default defineComponent({
     name: 'VPip',
@@ -69,39 +100,30 @@
     },
     emits: ['video-in-pip', 'requesting-pip-failure', 'exiting-pip-failure'],
     setup(_, { emit }) {
-      // State
       const state: State = reactive({
         video: null,
         isPipSupported: false,
       });
 
-      // Lifecycle Hooks
       onMounted(() => {
         state.isPipSupported = 'pictureInPictureEnabled' in document;
         state.video?.addEventListener('enterpictureinpicture', enteredPip);
         state.video?.addEventListener('leavepictureinpicture', leftPip);
       });
+
       onBeforeUnmount(() => {
         state.video?.removeEventListener('enterpictureinpicture', leftPip);
         state.video?.removeEventListener('leavepictureinpicture', leftPip);
       });
-      /**
-       * Emit an event when entered PiP mode
-       *
-       * @returns {void}
-       */
-      function enteredPip(): void {
+
+      const enteredPip = (): void => {
         emit('video-in-pip', true);
-      }
-      /**
-       * Emit an event when left PiP mode
-       *
-       * @returns {void}
-       */
-      function leftPip(): void {
+      };
+
+      const leftPip = (): void => {
         emit('video-in-pip', false);
-      }
-      // Methods
+      };
+
       const togglePip = () => {
         // If there is no element in Picture-in-Picture yet, let’s request
         // Picture-in-Picture for the video, otherwise leave it.
