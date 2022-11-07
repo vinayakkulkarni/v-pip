@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'releases/v')
     steps:
-      - name: Checkout 🛎
+      - name: Checkout code 🛎
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -18,18 +18,14 @@ jobs:
       - name: Setup node environment 📦
         uses: actions/setup-node@v3
         with:
-          node-version: 17
-          registry-url: 'https://registry.npmjs.org'
+          node-version-file: 'package.json'
           check-latest: true
           cache: 'npm'
 
-      - name: Upgrade npm ✨
-        run: npm i -g npm@latest
+      - name: Install dependencies 🚀
+        run: npm ci --prefer-offline --no-audit --omit=optional
 
-      - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit
-
-      - name: Trigger new release 🎉
+      - name: Trigger a release 🥳
         run: npx shipjs trigger
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
