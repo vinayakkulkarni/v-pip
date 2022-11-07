@@ -1,3 +1,12 @@
+## [3.0.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.0.0...v3.0.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* **deps:** bump v-github-icon from 3.0.1 to 3.0.2 in /example ([e67ada8](https://github.com/vinayakkulkarni/v-pip/commit/e67ada8d984c5a3933c7159dc83da05d1911b9a7))
+
+
+
 # [3.0.0](https://github.com/vinayakkulkarni/v-pip/compare/v2.3.1...v3.0.0) (2022-11-07)
 
 
