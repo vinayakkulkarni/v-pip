@@ -37,14 +37,16 @@
       const state = ref({
         pip: false,
         video: {
-          wrapper: '',
           src: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
           poster:
             'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg',
+          wrapper: '',
+          class: '',
+          height: '',
+          width: '',
         },
         button: {
           wrapper: '',
-          type: 'button',
           class:
             'cursor-pointer inline-flex items-center justify-center mt-4 rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
           label: 'Toggle picture-in-picture',
