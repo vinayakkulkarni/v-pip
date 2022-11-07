@@ -31,7 +31,6 @@
 ## Features
 
 - Vue 💚 Picture-in-picture!
-- Power of [Vue 3](https://vuejs.org) with awesomeness of [Tweakpane](https://cocopon.github.io/tweakpane/)!
 - Built from scratch using [TypeScript](https://www.typescriptlang.org)
 
 ---
