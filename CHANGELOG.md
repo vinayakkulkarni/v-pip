@@ -1,3 +1,37 @@
+## [3.1.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.1.0...v3.1.1) (2023-04-01)
+
+
+### Bug Fixes
+
+* **shipjs:** set github actor while release ([98d121d](https://github.com/vinayakkulkarni/v-pip/commit/98d121d62a18ddf4907d09410ba05f9643f72fbc))
+
+
+
+# [3.1.0](https://github.com/vinayakkulkarni/v-pip/compare/v3.0.1...v3.1.0) (2023-04-01)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/stale from 6 to 7 ([8bb850a](https://github.com/vinayakkulkarni/v-pip/commit/8bb850ab71b37ceac3154ec32401b2808b27b446))
+* **deps:** bump actions/stale from 7 to 8 ([d2ec785](https://github.com/vinayakkulkarni/v-pip/commit/d2ec785828ed0292bf0ae6c8ce9db7bbb7fdf85a))
+* **deps:** bump amannn/action-semantic-pull-request from 5.0.2 to 5.1.0 ([c01aafb](https://github.com/vinayakkulkarni/v-pip/commit/c01aafbc86926a7cc01cecfa89141abcb0659085))
+* **deps:** bump amannn/action-semantic-pull-request from 5.1.0 to 5.2.0 ([d9f02bd](https://github.com/vinayakkulkarni/v-pip/commit/d9f02bdb8107bab6eb3e9481bf6cd9bddb8a7397))
+* **deps:** bump peaceiris/actions-gh-pages from 3.9.0 to 3.9.1 ([689061a](https://github.com/vinayakkulkarni/v-pip/commit/689061aed25f099e7bcc057538cff3af31ed6c34))
+* **deps:** bump peaceiris/actions-gh-pages from 3.9.1 to 3.9.2 ([1f12cfb](https://github.com/vinayakkulkarni/v-pip/commit/1f12cfb422a65ad134ad701c987cf9e859fb77b7))
+* **deps:** bump peaceiris/actions-gh-pages from 3.9.2 to 3.9.3 ([204fa3b](https://github.com/vinayakkulkarni/v-pip/commit/204fa3b5d18a8cd80d4bf774254c5204cc95b1de))
+* **deps:** bump v-pip from 3.0.0 to 3.0.1 in /example ([3c24ee7](https://github.com/vinayakkulkarni/v-pip/commit/3c24ee7549c38fa8b1f6ed88b912e883ea8858cc))
+* **deps:** bump vue from 3.2.41 to 3.2.44 in /example ([2b07cba](https://github.com/vinayakkulkarni/v-pip/commit/2b07cba3f7c58a636cad0840396d800479f56f47))
+* **deps:** bump vue from 3.2.44 to 3.2.45 in /example ([6161242](https://github.com/vinayakkulkarni/v-pip/commit/6161242829153ca28676810b79f5eabb16e347de))
+* **deps:** bump vue from 3.2.45 to 3.2.47 in /example ([efbaf09](https://github.com/vinayakkulkarni/v-pip/commit/efbaf09a858e687070b5e4227fce03d82f372aa4))
+* remove tweakpane comment ([89768fb](https://github.com/vinayakkulkarni/v-pip/commit/89768fbe30b2cda24a39a0b15d82be7df36f865d))
+
+
+### Features
+
+* add automerger workflow for merging dependabot PRs ([197a175](https://github.com/vinayakkulkarni/v-pip/commit/197a1756ad9928b2377b4c6dc352127bfc4b9f1a))
+
+
+
 ## [3.0.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.0.0...v3.0.1) (2022-11-07)
 
 
