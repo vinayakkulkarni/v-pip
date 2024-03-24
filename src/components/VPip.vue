@@ -130,11 +130,13 @@
         const { pictureInPictureElement, exitPictureInPicture } =
           document as Document;
         if (!pictureInPictureElement && state.video) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           state.video.requestPictureInPicture().catch((error: any) => {
             // Video failed to enter Picture-in-Picture mode.
             emit('requesting-pip-failure', error);
           });
         } else {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           exitPictureInPicture().catch((error: any) => {
             // Video failed to leave Picture-in-Picture mode.
             emit('exiting-pip-failure', error);

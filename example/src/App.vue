@@ -56,9 +56,11 @@
       const onPipEnter = (e: boolean) => {
         state.value.pip = e;
       };
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const onPipFailure = (e: any) => {
         console.log('Video failed to enter Picture-in-Picture mode.', e);
       };
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const onPipExitFailure = (e: any) => {
         console.log('Video failed to leave Picture-in-Picture mode.', e);
       };
