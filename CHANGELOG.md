@@ -1,3 +1,33 @@
+# [3.2.0](https://github.com/vinayakkulkarni/v-pip/compare/v3.1.1...v3.2.0) (2024-03-24)
+
+
+### Bug Fixes
+
+* **deps:** bump @antfu/utils from 0.7.2 to 0.7.4 in /example ([05e2737](https://github.com/vinayakkulkarni/v-pip/commit/05e273758e7ac214b266915c2f702543cac86627))
+* **deps:** bump actions/checkout from 3 to 4 ([b17b541](https://github.com/vinayakkulkarni/v-pip/commit/b17b541d9cf8068f65d9cee5148970d977c1474e))
+* **deps:** bump actions/setup-node from 3 to 4 ([cfefc59](https://github.com/vinayakkulkarni/v-pip/commit/cfefc59d63e858783e529540052f0e513adcf703))
+* **deps:** bump actions/stale from 8 to 9 ([fb64814](https://github.com/vinayakkulkarni/v-pip/commit/fb648147132847d0f2e6eed714eade28b8552357))
+* **deps:** bump amannn/action-semantic-pull-request from 5.2.0 to 5.4.0 ([b982d71](https://github.com/vinayakkulkarni/v-pip/commit/b982d71a0082388ebe508992f5fe04a41c72d77b))
+* **deps:** Bump dependabot/fetch-metadata from 1.3.6 to 1.4.0 ([2c7f46b](https://github.com/vinayakkulkarni/v-pip/commit/2c7f46bcfc6fe052513afcd91bb0334f102e07c4))
+* **deps:** bump dependabot/fetch-metadata from 1.4.0 to 1.5.0 ([6dda8f6](https://github.com/vinayakkulkarni/v-pip/commit/6dda8f6ebc730457f298db64988aeb2f31ccdc5f))
+* **deps:** bump dependabot/fetch-metadata from 1.5.0 to 1.5.1 ([f6aeeb5](https://github.com/vinayakkulkarni/v-pip/commit/f6aeeb5a82d0cd04ea110912de5447f7a6fd5c5e))
+* **deps:** bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 ([408ac7d](https://github.com/vinayakkulkarni/v-pip/commit/408ac7dd75549e66f1eb0c6569f8783a65dea1e9))
+* **deps:** bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 ([#1888](https://github.com/vinayakkulkarni/v-pip/issues/1888)) ([c83f017](https://github.com/vinayakkulkarni/v-pip/commit/c83f017a7097e454e6d2dbe2eadcbb7ebde93dff))
+* **deps:** Bump v-github-icon from 3.0.2 to 3.1.1 in /example ([2980cd0](https://github.com/vinayakkulkarni/v-pip/commit/2980cd09493ce4655cf0240cc7256357747ca331))
+* **deps:** bump v-github-icon from 3.1.1 to 3.1.2 in /example ([a5138d7](https://github.com/vinayakkulkarni/v-pip/commit/a5138d713bdfcf33e30b7dc38c6533e71b08364a))
+* **deps:** bump v-pip from 3.0.1 to 3.1.1 in /example ([16c539e](https://github.com/vinayakkulkarni/v-pip/commit/16c539ed64737eacb358fcedef2c421cc3c7f4eb))
+* **deps:** Bump vue from 3.2.47 to 3.3.1 in /example ([844f268](https://github.com/vinayakkulkarni/v-pip/commit/844f2681364cf3c801e1b03654937bd854335c2e))
+* **deps:** bump vue from 3.3.1 to 3.3.2 in /example ([23d1e87](https://github.com/vinayakkulkarni/v-pip/commit/23d1e87fbc768cb16d459a8079d8ee02c3225737))
+* **deps:** bump vue from 3.3.11 to 3.3.13 in /example ([972d412](https://github.com/vinayakkulkarni/v-pip/commit/972d412d424dacb5c7867063f346b3fe19ca55dd))
+* **deps:** bump vue from 3.3.13 to 3.4.4 in /example ([6ac2eb5](https://github.com/vinayakkulkarni/v-pip/commit/6ac2eb5c533e5e7eaa2c97dc276064c7d3d17374))
+* **deps:** bump vue from 3.3.2 to 3.3.4 in /example ([becb172](https://github.com/vinayakkulkarni/v-pip/commit/becb1726f1d56a86c8f5a97d7da91fb0cba13285))
+* **deps:** bump vue from 3.3.4 to 3.3.11 in /example ([fffe671](https://github.com/vinayakkulkarni/v-pip/commit/fffe671a1c0ca3aa8e85684d865124ff8aebcf34))
+* **deps:** bump vue from 3.4.15 to 3.4.21 in /example ([99e7fe5](https://github.com/vinayakkulkarni/v-pip/commit/99e7fe54858c075e3d13737a4a3c290065729699))
+* **deps:** bump vue from 3.4.4 to 3.4.15 in /example ([f45c2c9](https://github.com/vinayakkulkarni/v-pip/commit/f45c2c970e0a44d1a36f022847f88f7ea9750d66))
+* **deps:** Bump yaml from 2.2.1 to 2.2.2 ([3994265](https://github.com/vinayakkulkarni/v-pip/commit/399426533db0cf53637e425b4015d37f35a70cce))
+
+
+
 ## [3.1.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.1.0...v3.1.1) (2023-04-01)
 
 
