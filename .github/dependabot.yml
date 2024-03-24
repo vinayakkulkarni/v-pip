@@ -1,13 +1,22 @@
 version: 2
 updates:
-  # Fetch and update latest `npm` packages
   - package-ecosystem: npm
+    versioning-strategy: increase
     directory: '/'
-    versioning-strategy: increase
     schedule:
       interval: daily
       time: '00:00'
-    open-pull-requests-limit: 10
+      timezone: Asia/Calcutta
+    groups:
+      npm-development:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
+      npm-production:
+        dependency-type: production
+        update-types:
+          - patch
     reviewers:
       - vinayakkulkarni
     assignees:
@@ -16,14 +25,23 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
-  # Fetch and update latest `npm` packages
   - package-ecosystem: npm
-    directory: '/example'
     versioning-strategy: increase
+    directory: '/example'
     schedule:
       interval: daily
       time: '00:00'
-    open-pull-requests-limit: 10
+      timezone: Asia/Calcutta
+    groups:
+      npm-development:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
+      npm-production:
+        dependency-type: production
+        update-types:
+          - patch
     reviewers:
       - vinayakkulkarni
     assignees:
@@ -32,13 +50,17 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
-  # Fetch and update latest `github-actions` pkgs
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
       interval: daily
       time: '00:00'
-    open-pull-requests-limit: 10
+      timezone: Asia/Calcutta
+    groups:
+      actions-minor:
+        update-types:
+          - minor
+          - patch
     reviewers:
       - vinayakkulkarni
     assignees:

@@ -1,0 +1,10 @@
+{
+  "name": "@vinayakkulkarni/v-pip",
+  "version": "3.3.0",
+  "exports": "./dist/v-pip.js",
+  "publish": {
+    "exclude": [
+      "!dist"
+    ]
+  }
+}
