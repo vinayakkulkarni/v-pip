@@ -15,16 +15,16 @@ importers:
         specifier: latest
         version: 21.0.1
       '@types/node':
-        specifier: ^25.5.0
+        specifier: ^25.8.0
         version: 25.8.0
       '@types/uuid':
         specifier: ^11.0.0
         version: 11.0.0
       '@vitejs/plugin-vue':
-        specifier: ^6.0.5
+        specifier: ^6.0.7
         version: 6.0.7(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(vue@3.5.34(typescript@6.0.3))
       '@vue/runtime-dom':
-        specifier: ^3.5.31
+        specifier: ^3.5.34
         version: 3.5.34
       husky:
         specifier: latest
@@ -36,28 +36,28 @@ importers:
         specifier: latest
         version: 17.0.5
       sass:
-        specifier: ^1.98.0
+        specifier: ^1.99.0
         version: 1.99.0
       typescript:
-        specifier: ^6.0.2
+        specifier: ^6.0.3
         version: 6.0.3
       unplugin-vue:
-        specifier: ^7.1.1
+        specifier: ^7.2.0
         version: 7.2.0(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(vue@3.5.34(typescript@6.0.3))(yaml@2.9.0)
       uuid:
-        specifier: ^13.0.0
+        specifier: ^13.0.2
         version: 13.0.2
       vite:
-        specifier: ^8.0.3
+        specifier: ^8.0.13
         version: 8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0)
       vite-plus:
-        specifier: ^0.1.14
+        specifier: ^0.1.21
         version: 0.1.21(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(typescript@6.0.3)(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(yaml@2.9.0)
       vue:
-        specifier: ^3.5.31
+        specifier: ^3.5.34
         version: 3.5.34(typescript@6.0.3)
       vue-tsc:
-        specifier: ^3.2.6
+        specifier: ^3.2.9
         version: 3.2.9(typescript@6.0.3)
 
   example:
