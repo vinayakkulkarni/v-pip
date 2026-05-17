@@ -20,9 +20,6 @@ importers:
       '@types/uuid':
         specifier: ^11.0.0
         version: 11.0.0
-      '@vitejs/plugin-vue':
-        specifier: ^6.0.7
-        version: 6.0.7(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(vue@3.5.34(typescript@6.0.3))
       '@vue/runtime-dom':
         specifier: ^3.5.34
         version: 3.5.34
@@ -47,9 +44,6 @@ importers:
       uuid:
         specifier: ^13.0.2
         version: 13.0.2
-      vite:
-        specifier: ^8.0.13
-        version: 8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0)
       vite-plus:
         specifier: ^0.1.21
         version: 0.1.21(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(typescript@6.0.3)(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(yaml@2.9.0)
@@ -3051,12 +3045,6 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       vite: 5.4.21(@types/node@25.8.0)(lightningcss@1.32.0)(sass@1.99.0)
       vue: 3.5.34(typescript@5.9.3)
-
-  '@vitejs/plugin-vue@6.0.7(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(vue@3.5.34(typescript@6.0.3))':
-    dependencies:
-      '@rolldown/pluginutils': 1.0.1
-      vite: 8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0)
-      vue: 3.5.34(typescript@6.0.3)
 
   '@voidzero-dev/vite-plus-core@0.1.21(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(typescript@6.0.3)(yaml@2.9.0)':
     dependencies:
