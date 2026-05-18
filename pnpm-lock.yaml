@@ -17,12 +17,6 @@ importers:
       '@types/node':
         specifier: ^25.8.0
         version: 25.8.0
-      '@types/uuid':
-        specifier: ^11.0.0
-        version: 11.0.0
-      '@vue/runtime-dom':
-        specifier: ^3.5.34
-        version: 3.5.34
       husky:
         specifier: latest
         version: 9.1.7
@@ -41,9 +35,6 @@ importers:
       unplugin-vue:
         specifier: ^7.2.0
         version: 7.2.0(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(vue@3.5.34(typescript@6.0.3))(yaml@2.9.0)
-      uuid:
-        specifier: ^13.0.2
-        version: 13.0.2
       vite-plus:
         specifier: ^0.1.21
         version: 0.1.21(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(typescript@6.0.3)(vite@8.0.13(@types/node@25.8.0)(jiti@2.6.1)(sass@1.99.0)(yaml@2.9.0))(yaml@2.9.0)
@@ -1140,10 +1131,6 @@ packages:
   '@types/node@25.8.0':
     resolution: {integrity: sha512-TCFSk8IZh+iLX1xtksoBVtdmgL+1IX0fC9BeU4QqFSuNdN/K+HUlhqOzEmSYYpZUVsLYcPqc9KX+60iDuninSQ==}
 
-  '@types/uuid@11.0.0':
-    resolution: {integrity: sha512-HVyk8nj2m+jcFRNazzqyVKiZezyhDKrGUA3jlEcg/nZ6Ms+qHwocba1Y/AaVaznJTAM9xpdFSh+ptbNrhOGvZA==}
-    deprecated: This is a stub types definition. uuid provides its own type definitions, so you do not need this installed.
-
   '@unocss/cli@66.6.8':
     resolution: {integrity: sha512-dJ4AmrhCtQwEDJtpFG7AgJ4Qi4GWnNgWWlLWq4DhKBOCcvldr9k98mscdhs3MOwph25DIxU5MdLRAg/OS1JryQ==}
     engines: {node: '>=14'}
@@ -2066,10 +2053,6 @@ packages:
     resolution: {integrity: sha512-0Mqk3AT2TZCXWKdcoaufeXNukv2mTrEZExeXlHIOZXdqYoHHr4n51pymnwV8x2BOVxwXbK2HLlI7usrqMpycdg==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
-  uuid@13.0.2:
-    resolution: {integrity: sha512-vzi9uRZ926x4XV73S/4qQaTwPXM2JBj6/6lI/byHH1jOpCzb0zDbfytgA9LcN/hzb2l7WQSQnxITOVx5un/wGw==}
-    hasBin: true
-
   v-github-icon@3.3.0:
     resolution: {integrity: sha512-IDlFAT3dGXOqI5DplicZ+rWzkashskwFBlAt+EoGVNoW70vfo9+awXOE3Z9YTKTw02TpafqvBsJ0wOlnIFoLcQ==}
     peerDependencies:
@@ -2903,10 +2886,6 @@ snapshots:
   '@types/node@25.8.0':
     dependencies:
       undici-types: 7.24.6
-
-  '@types/uuid@11.0.0':
-    dependencies:
-      uuid: 13.0.2
 
   '@unocss/cli@66.6.8':
     dependencies:
@@ -3930,8 +3909,6 @@ snapshots:
       '@jridgewell/remapping': 2.3.5
       picomatch: 4.0.4
       webpack-virtual-modules: 0.6.2
-
-  uuid@13.0.2: {}
 
   v-github-icon@3.3.0(vue@3.5.34(typescript@5.9.3)):
     dependencies:

@@ -1,23 +1,16 @@
 # [V-pip 🖼](https://github.com/vinayakkulkarni/v-pip#readme)
 
-[![Continuous Integration](https://github.com/vinayakkulkarni/v-pip/actions/workflows/ci.yml/badge.svg)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/vinayakkulkarni/v-pip/actions/workflows/codeql.yml/badge.svg)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/codeql.yml)
-[![Ship js trigger](https://github.com/vinayakkulkarni/v-pip/actions/workflows/shipjs-trigger.yml/badge.svg)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/shipjs-trigger.yml)
+[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/v-pip/pipeline.yml?logo=github-actions)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/pipeline.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vinayakkulkarni/v-pip?sort=semver&logo=github)](https://github.com/vinayakkulkarni/v-pip/releases)
 [![npm](https://img.shields.io/npm/v/v-pip?logo=npm)](https://www.npmjs.com/package/v-pip)
 [![npm](https://img.shields.io/npm/dm/v-pip?logo=npm)](http://npm-stat.com/charts.html?package=v-pip)
 [![npm (downloads)](https://img.shields.io/npm/dm/v-pip.svg)](https://npm-stat.com/charts.html?package=v-pip)
 [![npm bundle size (version)](https://img.shields.io/bundlephobia/min/v-pip/latest)](https://bundlephobia.com/package/v-pip@latest)
 [![npm type definitions](https://img.shields.io/npm/types/v-pip)](https://github.com/vinayakkulkarni/v-pip/blob/master/package.json)
-[![DeepScan grade](https://deepscan.io/api/teams/9055/projects/17923/branches/426854/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9055&pid=17923&bid=426854)
-[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/vinayakkulkarni/v-pip)](https://snyk.io/test/github/vinayakkulkarni/v-pip)
 [![license](https://img.shields.io/npm/l/v-pip)](https://github.com/vinayakkulkarni/v-pip/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/v-pip)](https://github.com/vinayakkulkarni/v-pip/graphs/contributors)
 
-[![eslint](https://img.shields.io/npm/dependency-version/v-pip/dev/eslint?logo=eslint)](https://eslint.org/)
-[![prettier](https://img.shields.io/npm/dependency-version/v-pip/dev/prettier?logo=prettier)](https://prettier.io/)
-[![vite](https://img.shields.io/npm/dependency-version/v-pip/dev/vite?logo=vite)](https://vitejs.dev/)
-[![vue](https://img.shields.io/npm/dependency-version/v-pip/dev/vue?logo=vue.js)](https://vuejs.org/)
+[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-pip/dev/vite-plus?logo=vite)](https://github.com/voidzero-dev/vite-plus)
 [![typescript](https://img.shields.io/npm/dependency-version/v-pip/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
 
 ---
