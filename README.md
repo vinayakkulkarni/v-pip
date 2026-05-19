@@ -1,17 +1,22 @@
 # [V-pip 🖼](https://github.com/vinayakkulkarni/v-pip#readme)
 
-[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/v-pip/pipeline.yml?logo=github-actions)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/pipeline.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/vinayakkulkarni/v-pip?sort=semver&logo=github)](https://github.com/vinayakkulkarni/v-pip/releases)
-[![npm](https://img.shields.io/npm/v/v-pip?logo=npm)](https://www.npmjs.com/package/v-pip)
-[![npm](https://img.shields.io/npm/dm/v-pip?logo=npm)](http://npm-stat.com/charts.html?package=v-pip)
-[![npm (downloads)](https://img.shields.io/npm/dm/v-pip.svg)](https://npm-stat.com/charts.html?package=v-pip)
-[![npm bundle size (version)](https://img.shields.io/bundlephobia/min/v-pip/latest)](https://bundlephobia.com/package/v-pip@latest)
-[![npm type definitions](https://img.shields.io/npm/types/v-pip)](https://github.com/vinayakkulkarni/v-pip/blob/master/package.json)
-[![license](https://img.shields.io/npm/l/v-pip)](https://github.com/vinayakkulkarni/v-pip/blob/master/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/vinayakkulkarni/v-pip)](https://github.com/vinayakkulkarni/v-pip/graphs/contributors)
+<!-- Badges -->
 
-[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-pip/dev/vite-plus?logo=vite)](https://github.com/voidzero-dev/vite-plus)
-[![typescript](https://img.shields.io/npm/dependency-version/v-pip/dev/typescript?logo=TypeScript)](https://www.typescriptlang.org/)
+[![Pipeline](https://img.shields.io/github/actions/workflow/status/vinayakkulkarni/v-pip/pipeline.yml?branch=main&logo=github-actions&label=pipeline)](https://github.com/vinayakkulkarni/v-pip/actions/workflows/pipeline.yml)
+[![GitHub release](https://img.shields.io/github/v/release/vinayakkulkarni/v-pip?sort=semver&logo=github&label=release)](https://github.com/vinayakkulkarni/v-pip/releases)
+[![npm](https://img.shields.io/npm/v/v-pip?logo=npm&label=npm)](https://www.npmjs.com/package/v-pip)
+[![JSR](https://img.shields.io/jsr/v/@vinayakkulkarni/v-pip?logo=jsr&label=jsr)](https://jsr.io/@vinayakkulkarni/v-pip)
+[![npm downloads](https://img.shields.io/npm/dm/v-pip?logo=npm&label=downloads)](http://npm-stat.com/charts.html?package=v-pip)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/v-pip?label=size)](https://bundlephobia.com/package/v-pip@latest)
+[![types](https://img.shields.io/npm/types/v-pip?logo=typescript&label=types)](https://github.com/vinayakkulkarni/v-pip/blob/main/package.json)
+[![License](https://img.shields.io/github/license/vinayakkulkarni/v-pip?logo=github&label=license)](./LICENSE)
+
+[![vite-plus](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-pip/dev/vite-plus?logo=vite&label=vite-plus)](https://github.com/voidzero-dev/vite-plus)
+[![typescript](https://img.shields.io/github/package-json/dependency-version/vinayakkulkarni/v-pip/dev/typescript?logo=TypeScript&label=typescript)](https://www.typescriptlang.org/)
+[![pnpm](https://img.shields.io/github/package-json/packageManager/vinayakkulkarni/v-pip?label=pnpm&logo=pnpm)](https://pnpm.io/)
+[![node](https://img.shields.io/node/v/v-pip?logo=node.js&label=node)](https://nodejs.org/)
+
+<!-- End Badges -->
 
 ---
 
@@ -30,8 +35,8 @@
 
 ### Versions
 
-- For Vue 3.x version – `npm i v-pip`
-- For Vue 2.x version – `npm i v-pip@1`
+- For Vue 3.x version – `pnpm add v-pip`
+- For Vue 2.x version – `pnpm add v-pip@1`
 
 ## Table of Contents
 
@@ -70,7 +75,7 @@
 ### Installation
 
 ```bash
-npm install v-pip # yarn add v-pip
+pnpm add v-pip # pnpm add v-pip
 ```
 
 CDN: [UNPKG](https://unpkg.com/v-pip/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/v-pip/dist/) (available as `window.VPip`)
@@ -79,10 +84,10 @@ CDN: [UNPKG](https://unpkg.com/v-pip/dist/) | [jsDelivr](https://cdn.jsdelivr.ne
 
 ```bash
 # install dependencies
-$ npm ci
+$ pnpm install --frozen-lockfile
 
 # package the library
-$ npm run build
+$ pnpm run build
 ```
 
 ## Usage

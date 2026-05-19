@@ -2,7 +2,7 @@
   "name": "v-pip",
   "version": "3.2.0",
   "private": false,
-  "description": "Vue wrapper for native picture-in-picture (PiP)",
+  "description": "Vue 3 wrapper for the native Picture-in-Picture (PiP) Web API — floating video, document PiP, and TypeScript-first composables.",
   "keywords": [
     "Component",
     "V-pip",

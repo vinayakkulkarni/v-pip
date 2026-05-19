@@ -6,5 +6,6 @@
     "exclude": [
       "!dist"
     ]
-  }
+  },
+  "description": "Vue 3 wrapper for the native Picture-in-Picture (PiP) Web API \u2014 floating video, document PiP, and TypeScript-first composables."
 }
