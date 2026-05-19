@@ -1,7 +1,7 @@
 {
   "name": "@vinayakkulkarni/v-pip",
   "version": "3.2.0",
-  "exports": "./dist/v-pip.js",
+  "exports": "./dist/index.js",
   "publish": {
     "exclude": [
       "!dist"
