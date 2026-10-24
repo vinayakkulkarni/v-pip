@@ -23,7 +23,7 @@
 
 ## Demo
 
-[![Edit v-pip](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/v-pip?file=src/App.vue)
+Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev)
 
 ---
 
@@ -67,7 +67,8 @@
 
 ## Demo
 
-[![Edit v-pip demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://bit.ly/v-pip)
+[v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev): a Nuxt app on
+Cloudflare Workers. Source in [`example/`](./example).
 
 ## Requirements
 
@@ -89,6 +90,12 @@ $ pnpm install --frozen-lockfile
 
 # package the library
 $ pnpm run build
+
+# run the demo locally
+$ pnpm run dev
+
+# deploy the demo to Cloudflare Workers (v-pip.vinayakkulkarni.dev)
+$ pnpm run deploy
 ```
 
 ## Usage
@@ -119,7 +126,7 @@ import { VPip } from 'v-pip';
 
 <details>
 <summary>
-<em>Example 1 (<a href="examples/App.vue">refer App.vue</a>)</em>
+Example 1 (full demo: example/app/components/PipPlayground.vue)
 </summary>
 
 ### HTML

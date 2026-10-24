@@ -80,6 +80,12 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
+.output
+.data
+
+# Cloudflare
+.wrangler
+.dev.vars
 dist
 
 # Gatsby files
