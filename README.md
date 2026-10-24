@@ -67,7 +67,8 @@ Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev)
 
 ## Demo
 
-[v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev) — a Nuxt app on Cloudflare Workers, source in [`example/`](./example).
+[v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev): a Nuxt app on
+Cloudflare Workers. Source in [`example/`](./example).
 
 ## Requirements
 
@@ -125,7 +126,7 @@ import { VPip } from 'v-pip';
 
 <details>
 <summary>
-<em>Example 1 (<a href="example/app/components/PipPlayground.vue">refer PipPlayground.vue</a>)</em>
+Example 1 (<a href="example/app/components/PipPlayground.vue">refer PipPlayground.vue</a>)
 </summary>
 
 ### HTML

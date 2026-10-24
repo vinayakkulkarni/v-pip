@@ -10,18 +10,21 @@
   font-display: swap;
   src: url('/fonts/clash-display-600.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Satoshi';
   font-weight: 400;
   font-display: swap;
   src: url('/fonts/satoshi-400.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'Satoshi';
   font-weight: 700;
   font-display: swap;
   src: url('/fonts/satoshi-700.woff2') format('woff2');
 }
+
 @font-face {
   font-family: 'JetBrains Mono';
   font-weight: 400;
@@ -37,6 +40,7 @@
 
 :root {
   color-scheme: light;
+
   --paper: oklch(0.975 0.005 230);
   --paper-2: oklch(0.948 0.007 230);
   --ink: oklch(0.21 0.014 250);
@@ -50,6 +54,7 @@
 
 .dark {
   color-scheme: dark;
+
   --paper: oklch(0.17 0.01 250);
   --paper-2: oklch(0.21 0.012 250);
   --ink: oklch(0.95 0.006 230);
@@ -68,6 +73,7 @@
   --text-state: clamp(3.5rem, 13vw, 8.5rem);
   --text-state--line-height: 0.85;
   --text-code: 0.8125rem;
+
   /* Reading measures and layout sizes. */
   --container-measure: 48ch;
   --container-headline: 20ch;
@@ -96,6 +102,7 @@
     color: var(--ink);
     -webkit-text-size-adjust: 100%;
   }
+
   body {
     font-family: var(--font-sans);
     font-feature-settings: 'calt' 1;
@@ -103,10 +110,12 @@
     -moz-osx-font-smoothing: grayscale;
     overflow-x: clip;
   }
+
   ::selection {
     background: var(--accent);
     color: var(--ink);
   }
+
   :focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
