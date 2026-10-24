@@ -126,7 +126,7 @@ import { VPip } from 'v-pip';
 
 <details>
 <summary>
-Example 1 (<a href="example/app/components/PipPlayground.vue">refer PipPlayground.vue</a>)
+Example 1 (full demo: example/app/components/PipPlayground.vue)
 </summary>
 
 ### HTML
