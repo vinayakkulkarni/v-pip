@@ -23,6 +23,8 @@ v-pip/
 │   ├── utils/          # Helper utilities
 │   ├── index.ts        # Public exports
 │   └── install.ts      # Vue plugin installer
+├── example/            # Nuxt demo → v-pip.vinayakkulkarni.dev
+├── tests/              # Vitest specs
 ├── dist/               # Built output (ESM only)
 ├── package.json
 ├── vite.config.ts
@@ -43,7 +45,9 @@ v-pip/
 | Package Mgr | pnpm                              |
 | Git Hooks   | Husky + lint-staged + commitlint  |
 | Release     | release-please                    |
-| Node        | 24                                |
+| Node        | 26                                |
+| Tests       | vp test (Vitest + happy-dom)      |
+| Demo        | Nuxt 4 on Cloudflare Workers      |
 
 ---
 
@@ -55,7 +59,10 @@ pnpm run lint:fix      # vp lint --fix
 pnpm run format        # vp fmt
 pnpm run format:check  # vp fmt --check
 pnpm run build         # vp pack (tsdown + dts)
-pnpm run test          # Tests
+pnpm run typecheck     # vue-tsc + demo typecheck
+pnpm run test          # vp test run
+pnpm run dev           # demo (example/) dev server
+pnpm run deploy        # build + deploy demo to Cloudflare Workers
 ```
 
 ---
@@ -96,5 +103,5 @@ All commits must follow conventional commit format with `Signed-off-by` trailer.
 
 ---
 
-**Last Updated:** 2026-02-08
+**Last Updated:** 2026-10-24
 **Maintainer:** Vinayak Kulkarni
