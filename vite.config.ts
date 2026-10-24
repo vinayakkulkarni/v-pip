@@ -2,6 +2,11 @@ import Vue from 'unplugin-vue/rolldown';
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+  plugins: [Vue()],
+  test: {
+    environment: 'happy-dom',
+    include: ['tests/**/*.test.ts'],
+  },
   pack: {
     entry: ['src/index.ts'],
     format: ['esm'],

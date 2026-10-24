@@ -1,153 +1,120 @@
 <template>
-  <div :class="wrapper">
-    <div :class="videoOptions.wrapper">
+  <div :class="props.wrapper">
+    <div :class="props.videoOptions.wrapper">
       <video
         ref="video"
-        :src="videoOptions.src"
-        :poster="videoOptions.poster"
-        :class="videoOptions.class"
-        :height="videoOptions.height"
-        :width="videoOptions.width"
+        :src="props.videoOptions.src"
+        :poster="props.videoOptions.poster"
+        :class="props.videoOptions.class"
+        :height="props.videoOptions.height"
+        :width="props.videoOptions.width"
         controls
+        playsinline
       />
     </div>
-    <div :class="buttonOptions.wrapper">
+    <div :class="props.buttonOptions.wrapper">
       <button
-        v-if="state.isPipSupported"
-        :type="buttonOptions.type"
-        :class="buttonOptions.class"
+        v-if="isPipSupported"
+        :type="props.buttonOptions.type ?? 'button'"
+        :class="props.buttonOptions.class"
         @click="togglePip"
       >
-        {{ buttonOptions.label }}
+        {{ props.buttonOptions.label }}
       </button>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-  import {
-    reactive,
-    onMounted,
-    onBeforeUnmount,
-    defineComponent,
-    PropType,
-  } from 'vue';
+<script setup lang="ts">
+  import { onBeforeUnmount, onMounted, ref, useTemplateRef } from 'vue';
   import type { ButtonHTMLAttributes } from 'vue';
 
-  declare global {
-    interface HTMLVideoElement {
-      requestPictureInPicture(): Promise<PictureInPictureWindow>;
-    }
-    interface Document {
-      readonly pictureInPictureElement: Element | null;
-      exitPictureInPicture(): Promise<void>;
-    }
-  }
-
-  type VideoOptionsProps = {
-    wrapper: string;
+  export type VideoOptionsProps = {
+    wrapper?: string;
     src: string;
-    poster: string;
-    class: string;
-    height: string;
-    width: string;
+    poster?: string;
+    class?: string;
+    height?: string;
+    width?: string;
   };
 
-  type ButtonOptionsProps = {
-    wrapper: string;
+  export type ButtonOptionsProps = {
+    wrapper?: string;
     type?: ButtonHTMLAttributes['type'];
-    class: string;
+    class?: string;
     label: string;
   };
 
-  type State = {
-    isPipSupported: boolean;
-    video: null | HTMLVideoElement;
+  const props = withDefaults(
+    defineProps<{
+      videoOptions?: VideoOptionsProps;
+      buttonOptions?: ButtonOptionsProps;
+      wrapper?: string;
+    }>(),
+    {
+      videoOptions: () => ({
+        wrapper: '',
+        src: '',
+        poster: '',
+        class: '',
+        height: '100%',
+        width: '100%',
+      }),
+      buttonOptions: () => ({
+        wrapper: '',
+        type: 'button',
+        class: '',
+        label: 'Toggle picture-in-picture',
+      }),
+      wrapper: '',
+    },
+  );
+
+  const emit = defineEmits<{
+    'video-in-pip': [isPip: boolean];
+    'requesting-pip-failure': [error: unknown];
+    'exiting-pip-failure': [error: unknown];
+  }>();
+
+  const video = useTemplateRef<HTMLVideoElement>('video');
+  const isPipSupported = ref(false);
+
+  const enteredPip = (): void => {
+    emit('video-in-pip', true);
   };
 
-  export default defineComponent({
-    name: 'VPip',
-    props: {
-      // Video related options
-      videoOptions: {
-        type: Object as PropType<VideoOptionsProps>,
-        required: false,
-        default: () => ({
-          wrapper: '',
-          src: '',
-          poster: '',
-          class: '',
-          height: '100%',
-          width: '100%',
-        }),
-      },
-      // button related options
-      buttonOptions: {
-        type: Object as PropType<ButtonOptionsProps>,
-        required: false,
-        default: () => ({
-          wrapper: '',
-          type: 'button',
-          class: '',
-          label: 'Toggle picture-in-picture',
-        }),
-      },
-      wrapper: {
-        type: String as PropType<string>,
-        default: '',
-        required: false,
-      },
-    },
-    emits: ['video-in-pip', 'requesting-pip-failure', 'exiting-pip-failure'],
-    setup(_, { emit }) {
-      const state: State = reactive({
-        video: null,
-        isPipSupported: false,
-      });
+  const leftPip = (): void => {
+    emit('video-in-pip', false);
+  };
 
-      onMounted(() => {
-        state.isPipSupported = 'pictureInPictureEnabled' in document;
-        state.video?.addEventListener('enterpictureinpicture', enteredPip);
-        state.video?.addEventListener('leavepictureinpicture', leftPip);
-      });
-
-      onBeforeUnmount(() => {
-        state.video?.removeEventListener('enterpictureinpicture', leftPip);
-        state.video?.removeEventListener('leavepictureinpicture', leftPip);
-      });
-
-      const enteredPip = (): void => {
-        emit('video-in-pip', true);
-      };
-
-      const leftPip = (): void => {
-        emit('video-in-pip', false);
-      };
-
-      const togglePip = () => {
-        // If there is no element in Picture-in-Picture yet, let’s request
-        // Picture-in-Picture for the video, otherwise leave it.
-        const { pictureInPictureElement, exitPictureInPicture } =
-          document as Document;
-        if (!pictureInPictureElement && state.video) {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          state.video.requestPictureInPicture().catch((error: any) => {
-            // Video failed to enter Picture-in-Picture mode.
-            emit('requesting-pip-failure', error);
-          });
-        } else {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          exitPictureInPicture().catch((error: any) => {
-            // Video failed to leave Picture-in-Picture mode.
-            emit('exiting-pip-failure', error);
-          });
-        }
-      };
-
-      return {
-        state,
-        togglePip,
-      };
-    },
+  onMounted(() => {
+    isPipSupported.value =
+      'pictureInPictureEnabled' in document && document.pictureInPictureEnabled;
+    video.value?.addEventListener('enterpictureinpicture', enteredPip);
+    video.value?.addEventListener('leavepictureinpicture', leftPip);
   });
+
+  onBeforeUnmount(() => {
+    video.value?.removeEventListener('enterpictureinpicture', enteredPip);
+    video.value?.removeEventListener('leavepictureinpicture', leftPip);
+  });
+
+  const togglePip = async (): Promise<void> => {
+    if (document.pictureInPictureElement) {
+      try {
+        await document.exitPictureInPicture();
+      } catch (error) {
+        emit('exiting-pip-failure', error);
+      }
+      return;
+    }
+    if (!video.value) return;
+    try {
+      await video.value.requestPictureInPicture();
+    } catch (error) {
+      emit('requesting-pip-failure', error);
+    }
+  };
+
+  defineExpose({ togglePip });
 </script>
