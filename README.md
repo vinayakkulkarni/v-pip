@@ -19,11 +19,13 @@
 
 <!-- End Badges -->
 
+**[Live demo][demo]** · [npm][npm] · [JSR][jsr]
+
 ---
 
 ## Demo
 
-Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev)
+Live demo: [v-pip.vinayakkulkarni.dev][demo]
 
 ---
 
@@ -67,7 +69,7 @@ Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev)
 
 ## Demo
 
-[v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev): a Nuxt app on
+[v-pip.vinayakkulkarni.dev][demo]: a Nuxt app on
 Cloudflare Workers. Source in [`example/`](./example).
 
 ## Requirements
@@ -253,3 +255,27 @@ Authored and maintained by Vinayak Kulkarni with help from contributors ([list](
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_large)
+
+## More from the author
+
+- [v-clappr][v-clappr] — Vue 3 wrapper for the Clappr media player
+- [v-image][v-image] — Vue 3 image input with live preview
+- [v-spotlight][v-spotlight] — cursor spotlight overlay for Vue 3
+- [v-intl][v-intl] — native `Intl` formatting components for Vue 3
+- [nxui][nxui] — animated UI components and Paper Shaders for Vue and Nuxt
+- [shadscan-vue][shadscan-vue] — UI audits for shadcn-vue and shadcn-nuxt apps
+
+See every project at [vinayakkulkarni.dev/projects][projects]
+and [geoql.in][geoql-in].
+
+[demo]: https://v-pip.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[npm]: https://www.npmjs.com/package/v-pip
+[jsr]: https://jsr.io/@vinayakkulkarni/v-pip
+[v-clappr]: https://v-clappr.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[v-image]: https://v-image.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[v-spotlight]: https://v-spotlight.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[v-intl]: https://v-intl.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[nxui]: https://nxui.geoql.in/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[shadscan-vue]: https://shadscan-vue.geoql.in/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[projects]: https://vinayakkulkarni.dev/projects?utm_source=github&utm_medium=readme&utm_campaign=v-pip
+[geoql-in]: https://geoql.in/?utm_source=github&utm_medium=readme&utm_campaign=v-pip
