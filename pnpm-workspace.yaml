@@ -14,7 +14,7 @@ catalog:
   wrangler: ^4.152.0
   # Classic TypeScript 6: vue-tsc patches the JS compiler, which the native
   # TypeScript 7 does not ship. Move to 7.x when vue-tsc supports it.
-  typescript: ^6.0.3
+  typescript: ^7.0.2
   vue-tsc: ^3.3.13
 
 # Nuxt 4.5+ runs on unhead v3. Keep one copy on the release that fixed the
