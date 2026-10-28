@@ -19,11 +19,13 @@
 
 <!-- End Badges -->
 
+**[Live demo](https://v-pip.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip)** · [npm](https://www.npmjs.com/package/v-pip) · [JSR](https://jsr.io/@vinayakkulkarni/v-pip)
+
 ---
 
 ## Demo
 
-Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev)
+Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip)
 
 ---
 
@@ -67,7 +69,7 @@ Live demo: [v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev)
 
 ## Demo
 
-[v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev): a Nuxt app on
+[v-pip.vinayakkulkarni.dev](https://v-pip.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip): a Nuxt app on
 Cloudflare Workers. Source in [`example/`](./example).
 
 ## Requirements
@@ -245,11 +247,22 @@ _Note_:
 
 ## Author
 
-**v-pip** &copy; [Vinayak](https://vinayakkulkarni.dev), Released under the [MIT](./LICENSE) License.<br>
+**v-pip** &copy; [Vinayak](https://vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip), Released under the [MIT](./LICENSE) License.<br>
 Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-pip/contributors)).
 
-> [vinayakkulkarni.dev](https://vinayakkulkarni.dev) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
+> [vinayakkulkarni.dev](https://vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) · GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
 
 ## License
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-pip?ref=badge_large)
+
+## More from the author
+
+- [v-clappr](https://v-clappr.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) — Vue 3 wrapper for the Clappr media player
+- [v-image](https://v-image.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) — Vue 3 image input with live preview
+- [v-spotlight](https://v-spotlight.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) — cursor spotlight overlay for Vue 3
+- [v-intl](https://v-intl.vinayakkulkarni.dev/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) — native `Intl` formatting components for Vue 3
+- [nxui](https://nxui.geoql.in/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) — animated copy-paste UI components and Paper Shaders for Vue 3 and Nuxt
+- [shadscan-vue](https://shadscan-vue.geoql.in/?utm_source=github&utm_medium=readme&utm_campaign=v-pip) — UI-fundamentals audits for shadcn-vue and shadcn-nuxt apps
+
+See every project at [vinayakkulkarni.dev/projects](https://vinayakkulkarni.dev/projects?utm_source=github&utm_medium=readme&utm_campaign=v-pip) and [geoql.in](https://geoql.in/?utm_source=github&utm_medium=readme&utm_campaign=v-pip).
