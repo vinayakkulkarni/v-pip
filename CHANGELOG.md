@@ -28,6 +28,13 @@
 
 
 
+## [3.3.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.3.0...v3.3.1) (2026-10-28)
+
+
+### Documentation
+
+* link live demo and related projects ([#2472](https://github.com/vinayakkulkarni/v-pip/issues/2472)) ([8911d3b](https://github.com/vinayakkulkarni/v-pip/commit/8911d3b226fb89d1d3f230cbf52a649bf644afb6))
+
 ## [3.3.0](https://github.com/vinayakkulkarni/v-pip/compare/v3.2.0...v3.3.0) (2026-10-25)
 
 
