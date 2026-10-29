@@ -28,6 +28,14 @@
 
 
 
+## [3.3.2](https://github.com/vinayakkulkarni/v-pip/compare/v3.3.1...v3.3.2) (2026-10-29)
+
+
+### Bug Fixes
+
+* **deps:** bump wrangler from 4.152.0 to 4.153.0 ([983e477](https://github.com/vinayakkulkarni/v-pip/commit/983e477a11d560a9777f4b88bc23e52a86caec68))
+* **deps:** bump wrangler from 4.152.0 to 4.153.0 ([742cf99](https://github.com/vinayakkulkarni/v-pip/commit/742cf99a776f0baed8ff541e7c00762e8af16cfd))
+
 ## [3.3.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.3.0...v3.3.1) (2026-10-28)
 
 
