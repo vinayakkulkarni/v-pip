@@ -34,6 +34,7 @@ jobs:
     needs: release-please
     if: ${{ needs.release-please.outputs.release_created == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
+    environment: npm
     permissions:
       contents: read
       id-token: write
