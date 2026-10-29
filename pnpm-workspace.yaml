@@ -11,7 +11,7 @@ catalog:
   '@nuxtjs/color-mode': ^4.0.1
   tailwindcss: ^4.3.3
   '@tailwindcss/vite': ^4.3.3
-  wrangler: ^4.152.0
+  wrangler: ^4.153.0
   # Classic TypeScript 6: vue-tsc patches the JS compiler, which the native
   # TypeScript 7 does not ship. Move to 7.x when vue-tsc supports it.
   typescript: ^6.0.3
