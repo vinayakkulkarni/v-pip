@@ -15,7 +15,7 @@ catalog:
   # Classic TypeScript 6: vue-tsc patches the JS compiler, which the native
   # TypeScript 7 does not ship. Move to 7.x when vue-tsc supports it.
   typescript: ^6.0.3
-  vue-tsc: ^3.3.13
+  vue-tsc: ^3.3.14
 
 # Nuxt 4.5+ runs on unhead v3. Keep one copy on the release that fixed the
 # Cloudflare preset build break (nuxt/nuxt#35670).
