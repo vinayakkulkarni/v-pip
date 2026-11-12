@@ -28,6 +28,50 @@
 
 
 
+## [3.3.2](https://github.com/vinayakkulkarni/v-pip/compare/v3.3.1...v3.3.2) (2026-11-12)
+
+
+### Bug Fixes
+
+* **deps:** bump @nuxtjs/color-mode from 4.0.1 to 4.1.0 ([68511f7](https://github.com/vinayakkulkarni/v-pip/commit/68511f7ad8b0368831f2782e3337e53afecb117c))
+* **deps:** bump @nuxtjs/color-mode from 4.0.1 to 4.1.0 ([f31a8c5](https://github.com/vinayakkulkarni/v-pip/commit/f31a8c5f09043ecd1da57f257d8b4d180947498c))
+* **deps:** bump node-forge from 1.4.0 to 1.4.2 ([7fe75c0](https://github.com/vinayakkulkarni/v-pip/commit/7fe75c08313683f25ac5e4cd67b62fbbbaa5cbc6))
+* **deps:** bump node-forge from 1.4.0 to 1.4.2 ([71fc85c](https://github.com/vinayakkulkarni/v-pip/commit/71fc85c98cb63c0836b327c975f997e87b4dac28))
+* **deps:** bump node-forge from 1.4.2 to 1.4.3 ([5491eb6](https://github.com/vinayakkulkarni/v-pip/commit/5491eb6280a37a6e0fc50f180abd3572d372c4a9))
+* **deps:** bump node-forge from 1.4.2 to 1.4.3 ([cda7e0d](https://github.com/vinayakkulkarni/v-pip/commit/cda7e0d353bf4f256b778af411e2b1c8b795eba2))
+* **deps:** bump nuxt ([737f2be](https://github.com/vinayakkulkarni/v-pip/commit/737f2bea44e0866202b024b911d9528ac38a0d2e))
+* **deps:** bump nuxt from 4.6.2 to 4.6.3 in the npm-production group across 1 directory ([16d9d23](https://github.com/vinayakkulkarni/v-pip/commit/16d9d238d085abc9b200242e3dd593782ffa3ebe))
+* **deps:** bump the actions-minor group with 2 updates ([c73d64d](https://github.com/vinayakkulkarni/v-pip/commit/c73d64dafeab6b6c0697df75cfb9827a7da78c2d))
+* **deps:** bump the actions-minor group with 2 updates ([52e642f](https://github.com/vinayakkulkarni/v-pip/commit/52e642f7cb9e492551566df52a3cbfc49f01f15c))
+* **deps:** bump the npm-production group with 2 updates ([eb80e7a](https://github.com/vinayakkulkarni/v-pip/commit/eb80e7a71ee769f79634248cb930ae8a8e018a8f))
+* **deps:** bump the npm-production group with 2 updates ([63b4d4c](https://github.com/vinayakkulkarni/v-pip/commit/63b4d4cf050560aced1fcc321c5b9968ff46597f))
+* **deps:** bump the npm-production group with 4 updates ([fa425cf](https://github.com/vinayakkulkarni/v-pip/commit/fa425cfa6c16872174bb07156130d3cc067976b9))
+* **deps:** bump the npm-production group with 4 updates ([c4f6d39](https://github.com/vinayakkulkarni/v-pip/commit/c4f6d395406bc0a0a7dc64b3118e651ff4e76f05))
+* **deps:** bump vue-tsc ([155f4df](https://github.com/vinayakkulkarni/v-pip/commit/155f4df7f761b22943a695b7574ad2abbe5d7229))
+* **deps:** bump vue-tsc from 3.3.13 to 3.3.14 in the npm-production group ([6a86450](https://github.com/vinayakkulkarni/v-pip/commit/6a86450565bc95c807f26085dc7b0b456fcdf9a5))
+* **deps:** bump wrangler ([d89eebb](https://github.com/vinayakkulkarni/v-pip/commit/d89eebb256dd746a744bbd795d1711aece398a77))
+* **deps:** bump wrangler from 4.152.0 to 4.153.0 ([983e477](https://github.com/vinayakkulkarni/v-pip/commit/983e477a11d560a9777f4b88bc23e52a86caec68))
+* **deps:** bump wrangler from 4.152.0 to 4.153.0 ([742cf99](https://github.com/vinayakkulkarni/v-pip/commit/742cf99a776f0baed8ff541e7c00762e8af16cfd))
+* **deps:** bump wrangler from 4.153.0 to 4.155.0 ([f346bfd](https://github.com/vinayakkulkarni/v-pip/commit/f346bfd0d0ba2d583e1301578a4e96017bb7ba38))
+* **deps:** bump wrangler from 4.153.0 to 4.155.0 ([5fa8db3](https://github.com/vinayakkulkarni/v-pip/commit/5fa8db3b920891bb4909bca0f6fe4e7cddd6407a))
+* **deps:** bump wrangler from 4.155.0 to 4.156.0 ([529465d](https://github.com/vinayakkulkarni/v-pip/commit/529465d818bdaa5d8ad407dda6403d12374982b1))
+* **deps:** bump wrangler from 4.155.0 to 4.156.0 ([eb26ddd](https://github.com/vinayakkulkarni/v-pip/commit/eb26ddd622e55660c1bfc2f07a766f4a4d3d6dd5))
+* **deps:** bump wrangler from 4.156.0 to 4.156.2 in the npm-production group ([0263aaa](https://github.com/vinayakkulkarni/v-pip/commit/0263aaafd50428a3221833e8580b842440125d0b))
+* **deps:** bump wrangler from 4.156.2 to 4.158.0 ([71e7c3b](https://github.com/vinayakkulkarni/v-pip/commit/71e7c3bbaf4013c456bf3c0687a7973dde1b1539))
+* **deps:** bump wrangler from 4.156.2 to 4.158.0 ([8e7a3e3](https://github.com/vinayakkulkarni/v-pip/commit/8e7a3e338af278f7be3b3251e6b19eb9aa565989))
+* **deps:** bump wrangler from 4.158.0 to 4.159.0 ([79ea385](https://github.com/vinayakkulkarni/v-pip/commit/79ea38589c86f56c892f9f4c32721533b54f7437))
+* **deps:** bump wrangler from 4.158.0 to 4.159.0 ([0ecf9eb](https://github.com/vinayakkulkarni/v-pip/commit/0ecf9eb534b70dd6e6995d941cc04dfda161f47c))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump the npm-development group with 2 updates ([cc925f3](https://github.com/vinayakkulkarni/v-pip/commit/cc925f329ff296ba8ac896b5989c4f0806502806))
+* **deps-dev:** bump the npm-development group with 2 updates ([f32e09e](https://github.com/vinayakkulkarni/v-pip/commit/f32e09e45340f4a213ad545abf91bdfb84cc98f3))
+* **deps-dev:** bump vite-plus ([5ac1c16](https://github.com/vinayakkulkarni/v-pip/commit/5ac1c166a2757e9f2d52f34fe6d5db79752296e2))
+* **deps-dev:** bump vite-plus ([eb16e53](https://github.com/vinayakkulkarni/v-pip/commit/eb16e53b9f5e09329d973313850aa4ddf3309b21))
+* **deps-dev:** bump vite-plus from 1.4.0 to 1.5.0 in the npm-development group across 1 directory ([5e32067](https://github.com/vinayakkulkarni/v-pip/commit/5e32067c8189d669f6dd108a796e87b431153a58))
+* **deps-dev:** bump vite-plus from 1.5.0 to 1.5.1 in the npm-development group ([8cc48ec](https://github.com/vinayakkulkarni/v-pip/commit/8cc48ec145cbffa2e5a7046a9e6b346337d9c4ac))
+
 ## [3.3.1](https://github.com/vinayakkulkarni/v-pip/compare/v3.3.0...v3.3.1) (2026-10-28)
 
 
