@@ -7,7 +7,7 @@ packages:
 # The library keeps exact ranges in package.json; the demo app reads these.
 catalog:
   nuxt: ^4.6.4
-  vue: ^3.5.45
+  vue: ^3.5.46
   '@nuxtjs/color-mode': ^4.1.0
   tailwindcss: ^4.3.5
   '@tailwindcss/vite': ^4.3.5
